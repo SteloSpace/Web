@@ -6,8 +6,6 @@
 
 <script>
 import BlockComponent from './components/BlockComponent.vue'
-import './styles/colors.scss'
-import './styles/typography.scss'
 
 export default {
 	components: {
@@ -17,12 +15,5 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-    /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-    margin: 0;
-    padding: 0;
-}
+
 </style>

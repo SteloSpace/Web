@@ -1,6 +1,5 @@
 <template>
-    <div>
-        Block Component
+    <div class="container">
         <BlockContext></BlockContext>
         <BlockAnimation></BlockAnimation>
     </div>
@@ -19,6 +18,13 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss" scoped>
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5rem;
+    }
 
 </style>
