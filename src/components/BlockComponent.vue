@@ -1,11 +1,13 @@
 <template>
     <div class="container">
-        <div>
-            <h2>{{ header }}</h2>
-            <slot name="content"/>
+        <div class="context-section">
+            <h2 class="Text-Style-4">{{ header }}</h2>
+            <div class="Text-Style-5">
+                <slot name="content"/>
+            </div>
         </div>
 
-        <slot name="imageSection"/>
+        <slot class="animation-section" name="imageSection"/>
     </div>
 </template>
 
@@ -21,10 +23,14 @@ export default {
 <style lang="scss" scoped>
     .container {
         height: 100vh;
+        min-height: 650px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-left: 5rem;
     }
 
+    .context-section {
+        max-width: 50%;
+    }
 </style>

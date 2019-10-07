@@ -1,19 +1,19 @@
 <template>
     <div id="app">
         <BlockComponent header="Stelo">
-            <div slot="content">
+            <template slot="content">
                 Share your Experiences
                 Coming Soon
-            </div>
+            </template>
 
             <div slot="imageSection"/>
         </BlockComponent>
 
         <BlockComponent header="Create&Share Constellations">
-            <p slot="content">
+            <template slot="content">
                 Pathways to your future goals
                 or the goals you have already achieved
-            </p>
+            </template>
 
             <div slot="imageSection">
                 <ConstellationGroup/>
@@ -21,9 +21,9 @@
         </BlockComponent>
 
         <BlockComponent header="Get help from other users">
-            <p slot="content">
+            <template slot="content">
                 Add Stars from user's constellations
-            </p>
+            </template>
 
             <div slot="imageSection">
                 <ConstellationGroup/>
@@ -31,35 +31,35 @@
         </BlockComponent>
 
         <BlockComponent header="Find the experience relevant to you">
-            <p slot="content">
+            <template slot="content">
                 Get information
                 Tailored to your past experiences
-            </p>
+            </template>
 
             <div slot="imageSection"/>
         </BlockComponent>
 
         <BlockComponent header="Keep track of your progress">
-            <p slot="content">
+            <template slot="content">
                 Stay on track with your goals
-            </p>
+            </template>
 
             <div slot="imageSection"/>
         </BlockComponent>
 
         <BlockComponent header="Starting with the topics you need most">
-            <div slot="content">
+            <template slot="content">
                 *marquee*
                 With more coming soon
-            </div>
+            </template>
 
             <div slot="imageSection"/>
         </BlockComponent>
 
         <BlockComponent header="Stay in touch subscribe to our newsletter">
-            <div slot="content">
+            <template slot="content">
                 No spam. We promise.
-            </div>
+            </template>
 
             <div slot="imageSection">
                 <input type="text" placeholder="email">
