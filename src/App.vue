@@ -5,16 +5,15 @@
 </template>
 
 <script>
-import BlockComponent from './components/BlockComponent.vue';
+import BlockComponent from './components/BlockComponent.vue'
 import './styles/colors.scss'
 import './styles/typography.scss'
 
 export default {
-    name: 'app',
-    components: {
-        BlockComponent
-    },
-};
+	components: {
+		BlockComponent
+	},
+}
 </script>
 
 <style lang="scss">

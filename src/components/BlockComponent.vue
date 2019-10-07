@@ -7,16 +7,15 @@
 </template>
 
 <script>
-import BlockContext from './BlockContext.vue';
-import BlockAnimation from './BlockAnimation.vue';
+import BlockContext from './BlockContext.vue'
+import BlockAnimation from './BlockAnimation.vue'
 
 export default {
-    name: 'app',
-    components: {
-        BlockContext,
-        BlockAnimation,
-    },
-};
+	components: {
+		BlockContext,
+		BlockAnimation,
+	},
+}
 </script>
 
 

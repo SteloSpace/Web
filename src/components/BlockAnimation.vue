@@ -6,12 +6,11 @@
 </template>
 
 <script>
-import ConstellationCard from './ConstellationCard.vue';
+import ConstellationCard from './ConstellationCard.vue'
 export default {
-    name: 'app',
-    components: {
-        ConstellationCard,
-    },
+	components: {
+		ConstellationCard,
+	},
 }
 </script>
 
