@@ -6,14 +6,10 @@
 </template>
 
 <script>
-import ConstellationCard from './shared/ConstellationCard.vue'
+import ConstellationCard from '../shared/ConstellationCard.vue'
 export default {
 	components: {
 		ConstellationCard,
 	},
 }
 </script>
-
-<style>
-
-</style>

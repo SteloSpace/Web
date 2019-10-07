@@ -1,19 +1,19 @@
 <template>
     <div class="container">
-        <BlockContext></BlockContext>
-        <BlockAnimation></BlockAnimation>
+        <div>
+            <h2>{{ header }}</h2>
+            <slot name="content"/>
+        </div>
+
+        <slot name="imageSection"/>
     </div>
 </template>
 
 <script>
-import BlockContext from './BlockContext.vue'
-import BlockAnimation from './BlockAnimation.vue'
-
 export default {
-	components: {
-		BlockContext,
-		BlockAnimation,
-	},
+	props: {
+		header: { type: String }
+	}
 }
 </script>
 
