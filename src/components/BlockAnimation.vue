@@ -1,6 +1,5 @@
 <template>
     <div>
-        Block Animation
         <ConstellationCard></ConstellationCard>
     </div>
 </template>
