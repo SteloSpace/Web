@@ -32,8 +32,6 @@ export default {
         display: flex;
         justify-content: flex-start;
         position: absolute;
-        border: 1px solid red;
-        left: 30%;
         top: 0;
         width: 2500px;
     }

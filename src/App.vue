@@ -6,16 +6,16 @@
                 Coming Soon
             </template>
 
-            <div slot="imageSection"/>
+            <div slot="imageSection" class="animation-section"/>
         </BlockComponent>
 
-        <BlockComponent header="Create&Share Constellations">
+        <BlockComponent header="Create & Share Constellations">
             <template slot="content">
                 Pathways to your future goals
                 or the goals you have already achieved
             </template>
 
-            <div slot="imageSection">
+            <div slot="imageSection" class="animation-section">
                 <ConstellationGroup/>
             </div>
         </BlockComponent>
@@ -25,7 +25,7 @@
                 Add Stars from user's constellations
             </template>
 
-            <div slot="imageSection">
+            <div slot="imageSection" class="animation-section">
                 <ConstellationGroup/>
             </div>
         </BlockComponent>
@@ -36,7 +36,7 @@
                 Tailored to your past experiences
             </template>
 
-            <div slot="imageSection"/>
+            <div slot="imageSection" class="animation-section"/>
         </BlockComponent>
 
         <BlockComponent header="Keep track of your progress">
@@ -44,7 +44,7 @@
                 Stay on track with your goals
             </template>
 
-            <div slot="imageSection"/>
+            <div slot="imageSection" class="animation-section"/>
         </BlockComponent>
 
         <BlockComponent header="Starting with the topics you need most">
@@ -53,7 +53,7 @@
                 With more coming soon
             </template>
 
-            <div slot="imageSection"/>
+            <div slot="imageSection" class="animation-section"/>
         </BlockComponent>
 
         <BlockComponent header="Stay in touch subscribe to our newsletter">
@@ -61,7 +61,7 @@
                 No spam. We promise.
             </template>
 
-            <div slot="imageSection">
+            <div slot="imageSection" class="animation-section">
                 <input type="text" placeholder="email">
                 <button>Subscribe</button>
             </div>

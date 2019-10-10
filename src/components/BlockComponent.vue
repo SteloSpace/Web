@@ -7,7 +7,7 @@
             </div>
         </div>
 
-        <slot class="animation-section" name="imageSection"/>
+        <slot name="imageSection"/>
     </div>
 </template>
 
@@ -29,10 +29,15 @@ export default {
         align-items: center;
         margin-left: 5rem;
         position: relative;
-        border: 1px solid green;
     }
 
     .context-section {
-        max-width: 40%;
+        flex: 1 1 30%;
+    }
+
+    .animation-section {
+        flex: 0 0 65%;
+        height: 100%;
+        position: relative;
     }
 </style>
