@@ -5,7 +5,7 @@
             description="Use dribbble to get people excited about the project. 
                          Include a URL to the project on Behance.">
         </ConstellationCard>
-        <!-- <ConstellationCard
+        <ConstellationCard
             title="Background about the client"
             description="Add some information about the client you are working with. 
                         If the project is fictional you can talk about why you created it.">
@@ -14,7 +14,7 @@
             title="Tackle Nahej"
             description="For all of those who have that one friend who everyone 'loves'.
                          A simple guide to tackling Nahej in the street.">
-        </ConstellationCard> -->
+        </ConstellationCard>
     </div>
 </template>
 
@@ -30,6 +30,11 @@ export default {
 <style scoped lang="scss">
     .container {
         display: flex;
-        //border: 1px solid red;
+        justify-content: flex-start;
+        position: absolute;
+        border: 1px solid red;
+        left: 30%;
+        top: 0;
+        width: 2500px;
     }
 </style>

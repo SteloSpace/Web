@@ -28,9 +28,11 @@ export default {
         justify-content: space-between;
         align-items: center;
         margin-left: 5rem;
+        position: relative;
+        border: 1px solid green;
     }
 
     .context-section {
-        max-width: 50%;
+        max-width: 40%;
     }
 </style>

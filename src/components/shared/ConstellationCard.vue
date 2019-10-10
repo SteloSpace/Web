@@ -30,6 +30,7 @@ export default {
         background-image: $constellation-card-bg;
         border-radius: 20px;
         display: flex;
+        margin: 0 30px;
         position: relative;
     }
 
@@ -37,8 +38,8 @@ export default {
         content: '';
         position: absolute;
         bottom: 0;
-        margin-left: 27px;
-        width: 300px;
+        left: 10%;
+        width: 80%;
         height: 50%;
         box-shadow: 0 0 40px;
         z-index: -1;

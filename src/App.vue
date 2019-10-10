@@ -83,5 +83,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+    body {
+        overflow-x: hidden;
+    }
 </style>
