@@ -1,13 +1,11 @@
 <template>
     <div class="card-background">
         <div class="card-content">
-            <div class="card-title Text-Style-6">
-                Get a Dribbble or (and) Behance account.
-            </div>
+            <div class="card-title Text-Style-6">{{title}}</div>
             <div class="card-circle blured"></div>
             <div class="card-circle"></div>
             <div class="card-description Text-Style-7">
-                Use dribbble to get people excited about the project. Include a URL to the project on Behance.
+                {{description}}
             </div>
         </div>
     </div>
@@ -15,7 +13,10 @@
 
 <script>
 export default {
-
+    props: {
+		title: { type: String },
+		description: { type: String },
+	}
 }
 </script>
 
@@ -59,8 +60,6 @@ export default {
         bottom: 0;
         left: 0;
         position: absolute;
-        font: Regular 17px/20px SFProText;
-        letter-spacing: -0.4px;
         color: #FFFFFF;
         width: 75%;
     }
