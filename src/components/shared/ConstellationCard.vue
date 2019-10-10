@@ -3,7 +3,7 @@
         <div class="card-content">
             <div class="card-title Text-Style-6">{{title}}</div>
             <div class="card-circle blured"></div>
-            <div class="card-circle"></div>
+            <div class="card-circle" v-bind:class="{ filled: isFilled }"></div>
             <div class="card-description Text-Style-7">
                 {{description}}
             </div>
@@ -15,7 +15,11 @@
 export default {
     props: {
 		title: { type: String },
-		description: { type: String },
+        description: { type: String },
+        isFilled: {
+            type: Boolean,
+            default: false
+        },
 	}
 }
 </script>
@@ -77,5 +81,9 @@ export default {
 
     .blured {
         filter: blur(4px);
+    }
+
+    .filled {
+        background: white;
     }
 </style>
