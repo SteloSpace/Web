@@ -1,11 +1,16 @@
 <template>
-    <div v-bind:class="[{relevant:relevant}, irrelevant]" class="search-result">
-        <div class="card-circle"></div>
+    <div v-bind:class="[relevant ? 'bg-relevant' : 'bg-irrelevant']" class="search-result">
+        <ProgressCircle id="progress" v-bind:colorInverted="!relevant"/>
     </div>
 </template>
 
 <script>
+import ProgressCircle from './ProgressCircle.vue'
+
 export default {
+    components: {
+        ProgressCircle
+    },
     props: {
         relevant: {
             type: Boolean,
@@ -18,33 +23,29 @@ export default {
 <style scoped lang="scss">
     @import '../../styles/colors';
 
+    $search-height: 90px;
+
     .search-result {
         width: 50%;
-        height: 90px;
-        margin: 0;
-        padding-top: 10px;
+        height: $search-height;
+        margin: 10px 0;
         border-radius: 20px;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 
-    .relevant {
-        background-image: gradient(to bottom, #071238, #05081a);
+    .bg-relevant {
+        background-image: linear-gradient(#071238, #05081A);
     }
 
-    .irrelevant {
-        background-image: gradient(to bottom, white, rgb(173, 173, 173));
+    .bg-irrelevant {
+        background-image: linear-gradient(white, rgb(173, 173, 173));
     }
 
-    .card-circle {
-        right: 9px;
-        position: absolute;
-        border: 4px solid white;
-        border-radius: 50px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .blured {
-        filter: blur(4px);
+    #progress {
+        position: relative;
+        right: 20px;
     }
 </style>
