@@ -62,8 +62,8 @@
             </template>
 
             <div slot="imageSection">
-                <input type="text" placeholder="email">
-                <button>Subscribe</button>
+                <InputField placeholder="email"/>
+                <ButtonComponent value="Subscribe" />
             </div>
         </BlockComponent>
 
@@ -72,12 +72,16 @@
 
 <script>
 import BlockComponent from './components/BlockComponent.vue'
+import ButtonComponent from './components/shared/ButtonComponent.vue'
+import InputField from './components/shared/InputField.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup'
 
 export default {
 	components: {
 		BlockComponent,
-		ConstellationGroup
+        ConstellationGroup,
+        ButtonComponent,
+        InputField,
 	},
 }
 </script>
