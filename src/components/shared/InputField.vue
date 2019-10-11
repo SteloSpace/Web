@@ -1,5 +1,5 @@
 <template>
-  <input class="input" type="text" v-bind:placeholder="placeholder" />
+    <input type="text" class="input" v-bind:placeholder="placeholder" />
 </template>
 
 <script>
@@ -12,10 +12,17 @@ export default {
 
 <style scoped lang="scss">
     .input {
-  	font-size: 1rem;
-	border: none;
-	outline: none;
-	padding: 1rem;
-	box-shadow: 0px 6px 15px #00000020;
-}
+        width: 20rem;
+        height: 3rem;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        padding: 0.7rem;
+        padding-left: 2rem;
+        box-shadow: 0px 6px 15px #00000020;
+    }
+
+    .input::placeholder {
+        color: #393939;
+    }
 </style>

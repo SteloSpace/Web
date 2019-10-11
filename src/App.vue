@@ -53,7 +53,7 @@
                 With more coming soon
             </template>
 
-            <div slot="imageSection"/>
+            <div class="animation-section" slot="imageSection"/>
         </BlockComponent>
 
         <BlockComponent header="Stay in touch subscribe to our newsletter">
@@ -61,9 +61,8 @@
                 No spam. We promise.
             </template>
 
-            <div slot="imageSection">
-                <InputField placeholder="email"/>
-                <ButtonComponent value="Subscribe" />
+            <div class="animation-section" slot="imageSection">
+                <NewsletterComponent/>
             </div>
         </BlockComponent>
 
@@ -72,16 +71,14 @@
 
 <script>
 import BlockComponent from './components/BlockComponent.vue'
-import ButtonComponent from './components/shared/ButtonComponent.vue'
-import InputField from './components/shared/InputField.vue'
+import NewsletterComponent from './components/NewsletterComponent.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup'
 
 export default {
 	components: {
 		BlockComponent,
         ConstellationGroup,
-        ButtonComponent,
-        InputField,
+        NewsletterComponent,
 	},
 }
 </script>
