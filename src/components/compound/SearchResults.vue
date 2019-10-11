@@ -5,6 +5,7 @@
         <ConstellationSearch></ConstellationSearch>
         <ConstellationSearch v-bind:relevant="false"></ConstellationSearch>
         <ConstellationSearch v-bind:relevant="false"></ConstellationSearch>
+        <div class="curtain"/>
     </div>
 </template>
 
@@ -24,5 +25,13 @@ export default {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+    }
+
+    .curtain {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background-image: linear-gradient(rgba(2555, 255, 255, 0), white);
     }
 </style>

@@ -39,6 +39,5 @@ export default {
         flex: 0 0 65%;
         height: 100%;
         position: relative;
-        border: 1px solid red;
     }
 </style>

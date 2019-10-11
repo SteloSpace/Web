@@ -41,7 +41,7 @@ export default {
     }
 
     .bg-irrelevant {
-        background-image: linear-gradient(white, rgb(173, 173, 173));
+        background-image: linear-gradient(white, rgb(233, 233, 233));
     }
 
     #progress {
