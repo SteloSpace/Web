@@ -8,15 +8,10 @@
 import ProgressCircle from './ProgressCircle.vue'
 
 export default {
-    components: {
-        ProgressCircle
-    },
-    props: {
-        relevant: {
-            type: Boolean,
-            default: true
-        }
-    }
+	components: { ProgressCircle },
+	props: {
+		relevant: { type: Boolean, default: true }
+	}
 }
 </script>
 

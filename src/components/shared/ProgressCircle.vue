@@ -7,16 +7,10 @@
 
 <script>
 export default {
-    props: {
-        completed: {
-            type: Boolean,
-            default: false
-        },
-        colorInverted: {
-            type: Boolean,
-            default: false
-        }
-    }
+	props: {
+		completed: { type: Boolean, default: false },
+		colorInverted: { type: Boolean, default: false }
+	}
 }
 </script>
 
@@ -34,11 +28,11 @@ export default {
         height: $circle-size;
     }
 
-    .normal {
+    .white-fill {
         border: $circle-border-weight solid white;
     }
 
-    .inversed {
+    .black-fill {
         border: $circle-border-weight solid black;
     }
 
