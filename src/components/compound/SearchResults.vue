@@ -1,10 +1,10 @@
 <template>
     <div class="search-results">
         <ConstellationSearch></ConstellationSearch>
-        <ConstellationSearch v-bind:relevant="false"></ConstellationSearch>
+        <ConstellationSearch :relevant="false"></ConstellationSearch>
         <ConstellationSearch></ConstellationSearch>
-        <ConstellationSearch v-bind:relevant="false"></ConstellationSearch>
-        <ConstellationSearch v-bind:relevant="false"></ConstellationSearch>
+        <ConstellationSearch :relevant="false"></ConstellationSearch>
+        <ConstellationSearch :relevant="false"></ConstellationSearch>
         <div class="curtain"/>
     </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div style="border: 1px solid blue">
-        <div v-bind:class="[colorInverted ? 'inversed' : 'normal', {completed: 'filled'}]" class="card-circle"></div>
-        <div v-bind:class="[colorInverted ? 'inversed' : 'normal']" class="card-circle blured"></div>
+        <div :class="[colorInverted ? 'black-fill' : 'white-fill', {completed: 'filled'}]" class="card-circle"></div>
+        <div :class="[colorInverted ? 'black-fill' : 'white-fill']" class="card-circle blured"></div>
     </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    @import '../../styles/colors';
 
     $circle-size: 50px;
     $circle-border-weight: 4px;

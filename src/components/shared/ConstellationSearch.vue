@@ -1,6 +1,6 @@
 <template>
-    <div v-bind:class="[relevant ? 'bg-relevant' : 'bg-irrelevant']" class="search-result">
-        <ProgressCircle id="progress" v-bind:colorInverted="!relevant"/>
+    <div :class="[relevant ? 'bg-relevant' : 'bg-irrelevant']" class="search-result">
+        <ProgressCircle id="progress" :colorInverted="!relevant"/>
     </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    @import '../../styles/colors';
 
     $search-height: 90px;
 
