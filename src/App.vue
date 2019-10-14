@@ -55,7 +55,7 @@
                 With more coming soon
             </template>
 
-            <div slot="imageSection" class="animation-section"/>
+            <div class="animation-section" slot="imageSection"/>
         </BlockComponent>
 
         <BlockComponent header="Stay in touch subscribe to our newsletter">
@@ -73,13 +73,15 @@
 
 <script>
 import BlockComponent from './components/BlockComponent.vue'
+import NewsletterComponent from './components/NewsletterComponent.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup.vue'
-import SearchResults from './components/compound/SearchResults.vue'
+import Results from './components/compound/SearchResults.vue'
 
 export default {
 	components: {
-		BlockComponent,
+		    BlockComponent,
         ConstellationGroup,
+        NewsletterComponent,
         SearchResults,
 	},
 }
