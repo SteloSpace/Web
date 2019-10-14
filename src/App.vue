@@ -36,7 +36,9 @@
                 Tailored to your past experiences
             </template>
 
-            <div slot="imageSection" class="animation-section"/>
+            <div slot="imageSection" class="animation-section">
+                <SearchResults/>
+            </div>
         </BlockComponent>
 
         <BlockComponent header="Keep track of your progress">
@@ -66,18 +68,19 @@
                 <button>Subscribe</button>
             </div>
         </BlockComponent>
-
     </div>
 </template>
 
 <script>
 import BlockComponent from './components/BlockComponent.vue'
-import ConstellationGroup from './components/compound/ConstellationGroup'
+import ConstellationGroup from './components/compound/ConstellationGroup.vue'
+import SearchResults from './components/compound/SearchResults.vue'
 
 export default {
 	components: {
 		BlockComponent,
-		ConstellationGroup
+        ConstellationGroup,
+        SearchResults,
 	},
 }
 </script>
