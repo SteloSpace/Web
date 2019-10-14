@@ -1,12 +1,12 @@
 <template>
-    <input type="text" class="input" v-bind:placeholder="placeholder" />
+    <input type="text" class="input" :placeholder="placeholder" />
 </template>
 
 <script>
 export default {
-    props: {
-        placeholder: {type: String},
-    }
+	props: {
+		placeholder: {type: String},
+	}
 }
 </script>
 
@@ -17,8 +17,7 @@ export default {
         font-size: 1rem;
         border: none;
         outline: none;
-        padding: 0.7rem;
-        padding-left: 2rem;
+        padding: 0.7rem 0.7rem 0.7rem 2rem;
         box-shadow: 0px 6px 15px #00000020;
     }
 

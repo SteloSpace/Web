@@ -10,9 +10,9 @@ import ButtonComponent from './shared/ButtonComponent.vue'
 import InputField from './shared/InputField.vue'
 
 export default {
-    components: {
+	components: {
 		ButtonComponent,
-        InputField,
+		InputField,
 	},
 }
 </script>
