@@ -1,9 +1,12 @@
 <template>
-    <div class="card-background">
-        <div class="card-content">
-            <div class="card-title Text-Style-6">{{title}}</div>
-            <div class="card-circle blured"></div>
-            <div class="card-circle" v-bind:class="{ filled: isFilled }"></div>
+    <div>
+        <div class="card-background">
+
+            <div class="card-header">
+                <div class="card-title Text-Style-6">{{title}}</div>
+                <div class="card-circle" :class="{ filled: isFilled }"></div>
+            </div>
+
             <div class="card-description Text-Style-7">
                 {{description}}
             </div>
@@ -25,7 +28,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    @import '../../styles/colors';
 
     .card-background {
         width: 354px;
@@ -34,53 +36,49 @@ export default {
         background-image: $constellation-card-bg;
         border-radius: 20px;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 0 30px;
         position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 50%;
+            box-shadow: 0 0 40px;
+            z-index: -1;
+        }
     }
 
-    .card-background::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 10%;
-        width: 80%;
-        height: 50%;
-        box-shadow: 0 0 40px;
-        z-index: -1;
-    }
-
-    .card-content {
-        position: relative;
-        flex-grow: 1;
+    .card-header {
+        display: flex;
+        justify-content: space-between;
     }
 
     .card-title {
-        top: 0;
-        left: 0;
-        width: 50%;
-        position: absolute;
+        width: 60%;
     }
 
-    .card-description {
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        color: #FFFFFF;
-        width: 75%;
-    }
-
-    .card-circle {
-        top: 9px;
-        right: 9px;
-        position: absolute;
+    .circle-border {
         border: 4px solid white;
         border-radius: 50px;
         width: 50px;
         height: 50px;
     }
 
-    .blured {
-        filter: blur(4px);
+    .card-circle {
+        @extend .circle-border;
+
+        &::before {
+            @extend .circle-border;
+            content: '';
+            filter: blur(4px);
+            margin: -4px;
+            display: inline-block;
+        }
     }
 
     .filled {

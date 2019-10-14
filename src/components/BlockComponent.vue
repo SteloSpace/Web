@@ -22,22 +22,33 @@ export default {
 
 <style lang="scss" scoped>
     .container {
-        height: 100vh;
+        height: 100%;
         min-height: 650px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 5rem;
+        padding-left: 5rem;
         position: relative;
+
+        @media only screen and (max-width: 900px) {
+            flex-wrap: wrap;
+        }
+        @media only screen and (max-width: 500px) {
+            padding-left: 1rem;
+            .context-section {
+                min-width: unset;
+                max-width: unset;
+            }
+            .animation-section {
+                width: 100%;
+            }
+        }
     }
 
     .context-section {
-        flex: 1 1 30%;
+        min-width: 320px;
+        max-width: 45%;
+        margin-right: 10rem;
     }
 
-    .animation-section {
-        flex: 0 0 65%;
-        height: 100%;
-        position: relative;
-    }
 </style>

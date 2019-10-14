@@ -1,17 +1,17 @@
 <template>
     <div class="container">
-        <ConstellationCard 
-            title="Get a Dribbble or (and) Behance account." 
-            description="Use dribbble to get people excited about the project. 
+        <ConstellationCard
+            title="Get a Dribbble or (and) Behance account."
+            description="Use dribbble to get people excited about the project.
                          Include a URL to the project on Behance.">
         </ConstellationCard>
         <ConstellationCard
             title="Background about the client"
-            description="Add some information about the client you are working with. 
+            description="Add some information about the client you are working with.
                         If the project is fictional you can talk about why you created it."
             isFilled=true>
         </ConstellationCard>
-        <ConstellationCard 
+        <ConstellationCard
             title="Tackle Nahej"
             description="For all of those who have that one friend who everyone 'loves'.
                          A simple guide to tackling Nahej in the street.">
@@ -31,9 +31,7 @@ export default {
 <style scoped lang="scss">
     .container {
         display: flex;
-        justify-content: flex-start;
-        position: absolute;
-        top: 0;
-        width: 2500px;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
     }
 </style>

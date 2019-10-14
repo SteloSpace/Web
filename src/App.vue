@@ -83,7 +83,8 @@ export default {
 </script>
 
 <style lang="scss">
-    body {
+    #app {
         overflow-x: hidden;
+        width: 100%;
     }
 </style>
