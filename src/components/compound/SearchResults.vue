@@ -23,8 +23,9 @@ export default {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     .curtain {

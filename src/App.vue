@@ -30,7 +30,7 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent header="Find the experience relevant to you">
+        <BlockComponent header="Find the experience relevant to you" class="test">
             <template slot="content">
                 Get information
                 Tailored to your past experiences
@@ -46,7 +46,9 @@
                 Stay on track with your goals
             </template>
 
-            <div slot="imageSection" class="animation-section"/>
+            <div slot="imageSection" class="animation-section">
+                <ConstellationGroup/>
+            </div>
         </BlockComponent>
 
         <BlockComponent header="Starting with the topics you need most">
@@ -64,8 +66,7 @@
             </template>
 
             <div slot="imageSection" class="animation-section">
-                <input type="text" placeholder="email">
-                <button>Subscribe</button>
+                <NewsletterComponent></NewsletterComponent>
             </div>
         </BlockComponent>
     </div>
@@ -88,6 +89,11 @@ export default {
 </script>
 
 <style lang="scss">
+    .test {
+        background: rgba(255, 255, 0, 0.349);
+        border: 1px solid red;
+    }
+
     #app {
         overflow-x: hidden;
         width: 100%;

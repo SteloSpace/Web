@@ -29,9 +29,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .container {
+    .container { 
         display: flex;
-        justify-content: flex-end;
         flex-wrap: nowrap;
+        justify-content: flex-end;
+        position: relative;
+        height: 100%;
+        margin-right: -130px;
     }
 </style>

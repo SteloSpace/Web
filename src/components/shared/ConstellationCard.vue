@@ -1,15 +1,13 @@
 <template>
-    <div>
-        <div class="card-background">
+    <div class="card-background">
 
-            <div class="card-header">
-                <div class="card-title Text-Style-6">{{title}}</div>
-                <div class="card-circle" v-bind:class="{ filled: isFilled }"></div>
-            </div>
+        <div class="card-header">
+            <div class="card-title Text-Style-6">{{title}}</div>
+            <div class="card-circle" v-bind:class="{ filled: isFilled }"></div>
+        </div>
 
-            <div class="card-description Text-Style-7">
-                {{description}}
-            </div>
+        <div class="card-description Text-Style-7">
+            {{description}}
         </div>
     </div>
 </template>
@@ -28,10 +26,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    $width: 200px;
 
     .card-background {
-        width: 354px;
-        height: 520px;
+        height: $width*1.2;
+        // width: $width;
+        min-width: $width;
+        max-width: $width;
         padding: 46px 21px 47px 30px;
         background-image: $constellation-card-bg;
         border-radius: 20px;

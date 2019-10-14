@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
     .container {
-        height: 100%;
+        height: 100vh;
         min-height: 650px;
         display: flex;
         justify-content: space-between;
@@ -48,11 +48,11 @@ export default {
     .context-section {
         min-width: 320px;
         max-width: 45%;
-        margin-right: 10rem;
+        // margin-right: 10rem;
     }
 
     .animation-section {
-        background: rgba(255, 255, 0, 0.349);
-        border: 1px solid red; 
+        height: 100%;
+        width: 54%;
     }
 </style>

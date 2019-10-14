@@ -25,7 +25,6 @@ export default {
         justify-content: center;
         position: relative;
         height: 100%;
-        width: 100%;
     }
 
     .element {

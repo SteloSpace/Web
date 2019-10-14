@@ -20,7 +20,7 @@ export default {
     $search-height: 90px;
 
     .search-result {
-        width: 50%;
+        width: 400px;
         height: $search-height;
         margin: 10px 0;
         border-radius: 20px;
