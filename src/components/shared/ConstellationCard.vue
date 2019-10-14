@@ -4,7 +4,7 @@
 
             <div class="card-header">
                 <div class="card-title Text-Style-6">{{title}}</div>
-                <div class="card-circle" :class="{ filled: isFilled }"></div>
+                <div class="card-circle" v-bind:class="{ filled: isFilled }"></div>
             </div>
 
             <div class="card-description Text-Style-7">

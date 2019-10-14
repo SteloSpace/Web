@@ -51,4 +51,8 @@ export default {
         margin-right: 10rem;
     }
 
+    .animation-section {
+        background: rgba(255, 255, 0, 0.349);
+        border: 1px solid red; 
+    }
 </style>

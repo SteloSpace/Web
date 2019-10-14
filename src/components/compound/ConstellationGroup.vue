@@ -9,7 +9,7 @@
             title="Background about the client"
             description="Add some information about the client you are working with.
                         If the project is fictional you can talk about why you created it."
-            isFilled=true>
+            :isFilled=true>
         </ConstellationCard>
         <ConstellationCard
             title="Tackle Nahej"

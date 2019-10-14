@@ -75,11 +75,11 @@
 import BlockComponent from './components/BlockComponent.vue'
 import NewsletterComponent from './components/NewsletterComponent.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup.vue'
-import Results from './components/compound/SearchResults.vue'
+import SearchResults from './components/compound/SearchResults.vue'
 
 export default {
 	components: {
-		    BlockComponent,
+		BlockComponent,
         ConstellationGroup,
         NewsletterComponent,
         SearchResults,
