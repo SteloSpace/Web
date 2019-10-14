@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="button">{{value}}</button>
+        <button v-on="$listeners" class="button">{{value}}</button>
     </div>
 </template>
 
