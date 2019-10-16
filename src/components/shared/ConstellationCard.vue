@@ -32,11 +32,9 @@ export default {
 
 <style scoped lang="scss">
     $width: 200px;
-
     .card-background {
-        height: $width*1.4;
-        min-width: $width;
-        max-width: $width;
+        height: 1.4*$width;
+        width: $width;
         padding: 46px 21px 47px 30px;
         background-image: $constellation-card-bg;
         border-radius: 20px;
@@ -70,7 +68,6 @@ export default {
     #progress {
         position: relative;
         right: 0;
-        top: 0;
         width: 32px;
         height: 32px;
     }

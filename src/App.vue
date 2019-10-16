@@ -25,6 +25,7 @@
                 Pathways to your future goals
                 <br>
                 or the goals you have already achieved
+                <ButtonComponent value="Try creating your own" style="margin-top: 1em;"/>
             </template>
 
             <div slot="imageSection" class="animation-section">
@@ -117,6 +118,7 @@ import BlockComponent from './components/BlockComponent.vue'
 import NewsletterComponent from './components/NewsletterComponent.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup.vue'
 import SearchResults from './components/compound/SearchResults.vue'
+import ButtonComponent from './components/shared/ButtonComponent.vue'
 
 export default {
 	components: {
@@ -124,6 +126,7 @@ export default {
         ConstellationGroup,
         NewsletterComponent,
         SearchResults,
+        ButtonComponent,
 	},
 }
 </script>
@@ -147,5 +150,7 @@ export default {
         max-height: 100vh;
         width: 100%;
         scroll-snap-type: y mandatory;
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100vh);
     }
 </style>

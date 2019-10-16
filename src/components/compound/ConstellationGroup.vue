@@ -41,6 +41,7 @@ export default {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        overflow: hidden;
     }
 
     .container { 
@@ -48,7 +49,7 @@ export default {
         flex-wrap: nowrap;
         justify-content: flex-end;
         position: relative;
-        margin-right: -130px;
+        align-items: flex-end;
     }
 
     .description {
