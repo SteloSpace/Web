@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="context-section">
-            <h2 class="Text-Style-4">{{ header }}</h2>
+            <h2 class="Section-Header">{{ header }}</h2>
             <div class="Text-Style-5">
                 <slot name="content"/>
             </div>
@@ -54,5 +54,8 @@ export default {
     .animation-section {
         height: 100%;
         width: 54%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>

@@ -3,7 +3,7 @@
 
         <div class="card-header">
             <div class="card-title Text-Style-6">{{title}}</div>
-            <div class="card-circle" v-bind:class="{ filled: isFilled }"></div>
+            <ProgressCircle :completed="completed" id="progress"/>
         </div>
 
         <div class="card-description Text-Style-7">
@@ -13,11 +13,16 @@
 </template>
 
 <script>
+import ProgressCircle from "./ProgressCircle.vue"
+
 export default {
+    components: {
+        ProgressCircle
+    },
     props: {
 		title: { type: String },
         description: { type: String },
-        isFilled: {
+        completed: {
             type: Boolean,
             default: false
         },
@@ -29,8 +34,7 @@ export default {
     $width: 200px;
 
     .card-background {
-        height: $width*1.2;
-        // width: $width;
+        height: $width*1.4;
         min-width: $width;
         max-width: $width;
         padding: 46px 21px 47px 30px;
@@ -63,26 +67,9 @@ export default {
         width: 60%;
     }
 
-    .circle-border {
-        border: 4px solid white;
-        border-radius: 50px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .card-circle {
-        @extend .circle-border;
-
-        &::before {
-            @extend .circle-border;
-            content: '';
-            filter: blur(4px);
-            margin: -4px;
-            display: inline-block;
-        }
-    }
-
-    .filled {
-        background: white;
+    #progress {
+        position: relative;
+        right: 0;
+        top: 0;
     }
 </style>

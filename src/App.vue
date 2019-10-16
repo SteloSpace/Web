@@ -6,7 +6,9 @@
                 Coming Soon
             </template>
 
-            <div slot="imageSection" class="animation-section"/>
+            <div slot="imageSection" class="animation-section">
+                <img src="./assets/artboardWithPeople.svg" width="100%">
+            </div>
         </BlockComponent>
 
         <BlockComponent header="Create & Share Constellations">
@@ -30,7 +32,7 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent header="Find the experience relevant to you" class="test">
+        <BlockComponent header="Find the experience relevant to you">
             <template slot="content">
                 Get information
                 Tailored to your past experiences

@@ -1,5 +1,5 @@
 <template>
-    <div style="border: 1px solid blue">
+    <div>
         <div :class="[colorInverted ? 'black-fill' : 'white-fill', {completed: 'filled'}]" class="card-circle"></div>
         <div :class="[colorInverted ? 'black-fill' : 'white-fill']" class="card-circle blured"></div>
     </div>
@@ -16,8 +16,8 @@ export default {
 
 <style scoped lang="scss">
 
-    $circle-size: 50px;
-    $circle-border-weight: 4px;
+    $circle-size: 30px;
+    $circle-border-weight: 3px;
 
     .card-circle {
         position: absolute;

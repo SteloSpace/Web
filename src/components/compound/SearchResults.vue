@@ -1,5 +1,9 @@
 <template>
     <div class="search-results">
+        <div>
+            <img src="../../assets/SearchIcon.svg">
+            <div class="Text-Style-5">Graduate College</div>
+        </div>
         <ConstellationSearch></ConstellationSearch>
         <ConstellationSearch :relevant="false"></ConstellationSearch>
         <ConstellationSearch></ConstellationSearch>
@@ -32,7 +36,7 @@ export default {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 50%;
-        background-image: linear-gradient(rgba(2555, 255, 255, 0), white);
+        height: 80%;
+        background-image: linear-gradient(#0000, #fff);
     }
 </style>
