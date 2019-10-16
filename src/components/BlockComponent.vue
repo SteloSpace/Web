@@ -49,7 +49,7 @@ export default {}
     }
 
     #header {
-        margin-bottom: 3rem;
+        margin-bottom: 40px;
     }
 
     .animation-section {

@@ -27,7 +27,7 @@ export default {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         position: relative;
     }
@@ -43,7 +43,7 @@ export default {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 80%;
+        height: 60%;
         background-image: linear-gradient(#0000, #fff);
     }
 </style>
