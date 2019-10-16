@@ -41,5 +41,7 @@ export default {
     #progress {
         position: relative;
         right: 20px;
+        width: 40px;
+        height: 40px;
     }
 </style>

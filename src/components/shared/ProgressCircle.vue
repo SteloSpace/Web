@@ -1,7 +1,6 @@
 <template>
-    <div>
-        <div :class="[colorInverted ? 'black-fill' : 'white-fill', {completed: 'filled'}]" class="card-circle"></div>
-        <div :class="[colorInverted ? 'black-fill' : 'white-fill']" class="card-circle blured"></div>
+    <div :class="[colorInverted ? 'black-fill' : 'white-fill', {completed: 'filled'}]" class="progress-circle">
+        <div class="blurred"></div>
     </div>
 </template>
 
@@ -15,17 +14,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-    $circle-size: 30px;
     $circle-border-weight: 3px;
 
-    .card-circle {
-        position: absolute;
-        left: -$circle-size - $circle-border-weight;
-        top: -($circle-size + $circle-border-weight)/2;
-        border-radius: $circle-size;
-        width: $circle-size;
-        height: $circle-size;
+    .progress-circle {
+        border-radius: 100%;
+    }
+
+    .blurred {
+        width: inherit;
+        height: inherit;
+        border: inherit;
+        border-radius: inherit;
+        background-color: inherit;
+        filter: blur($circle-border-weight);
+        margin: -$circle-border-weight;
     }
 
     .white-fill {
@@ -38,9 +40,5 @@ export default {
 
     .filled {
         background-color: white;
-    }
-
-    .blured {
-        filter: blur(4px);
     }
 </style>

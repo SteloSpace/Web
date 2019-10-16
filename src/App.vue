@@ -1,6 +1,9 @@
 <template>
     <div id="app">
-        <BlockComponent header="Stelo">
+        <BlockComponent>
+            <template slot="header">
+                <div>Stelo</div>
+            </template>
             <template slot="content">
                 Share your Experiences
                 Coming Soon
@@ -11,7 +14,10 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent header="Create & Share Constellations">
+        <BlockComponent>
+            <template slot="header">
+                <div>Create & Share Constellations</div>
+            </template>
             <template slot="content">
                 Pathways to your future goals
                 or the goals you have already achieved
@@ -22,7 +28,11 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent header="Get help from other users">
+        <BlockComponent header="Get help From other users">
+            <template slot="header">
+                <div>Get help</div>
+                <div>From other users</div>
+            </template>
             <template slot="content">
                 Add Stars from user's constellations
             </template>
@@ -32,7 +42,11 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent header="Find the experience relevant to you">
+        <BlockComponent>
+            <template slot="header">
+                <div>Find the experience</div>
+                <div>Relevant to you</div>
+            </template>
             <template slot="content">
                 Get information
                 Tailored to your past experiences
@@ -43,7 +57,11 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent header="Keep track of your progress">
+        <BlockComponent>
+            <template slot="header">
+                <div>Keep track</div>
+                <div>Of your progress</div>
+            </template>
             <template slot="content">
                 Stay on track with your goals
             </template>
@@ -53,7 +71,10 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent header="Starting with the topics you need most">
+        <BlockComponent>
+            <template slot="header">
+                <div>Starting with the topics you need most</div>
+            </template>
             <template slot="content">
                 *marquee*
                 With more coming soon
@@ -62,7 +83,11 @@
             <div class="animation-section" slot="imageSection"/>
         </BlockComponent>
 
-        <BlockComponent header="Stay in touch subscribe to our newsletter">
+        <BlockComponent>
+            <template slot="header">
+                <div>Stay in touch</div>
+                <div>Subscribe to our newsletter</div>
+            </template>
             <template slot="content">
                 No spam. We promise.
             </template>

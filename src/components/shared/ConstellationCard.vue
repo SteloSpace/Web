@@ -2,11 +2,11 @@
     <div class="card-background">
 
         <div class="card-header">
-            <div class="card-title Text-Style-6">{{title}}</div>
+            <div class="card-title Text-Card-Title">{{title}}</div>
             <ProgressCircle :completed="completed" id="progress"/>
         </div>
 
-        <div class="card-description Text-Style-7">
+        <div class="card-description Text-Card-Description">
             {{description}}
         </div>
     </div>
@@ -71,5 +71,7 @@ export default {
         position: relative;
         right: 0;
         top: 0;
+        width: 32px;
+        height: 32px;
     }
 </style>

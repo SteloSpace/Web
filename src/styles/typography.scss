@@ -24,7 +24,7 @@
   color: #ffffff;
 }
 
-.Section-Header {
+.Text-Section-Header {
   font-family: 'Open Sans';
   font-size: 64px;
   font-weight: 600;
@@ -34,6 +34,42 @@
   letter-spacing: normal;
   text-align: left;
   color: $navy;
+}
+
+.Text-Section-Description {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(4, 20, 44, 0.76);
+}
+
+.Text-Card-Title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.38px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Text-Card-Description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #ffffff;
 }
 
 .Catchphrase {
@@ -60,30 +96,6 @@
   color: #393939;
 }
 
-.Text-Style-6 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.18;
-  letter-spacing: 0.38px;
-  text-align: left;
-  color: #ffffff;
-}
-
-.Text-Style-5 {
-  font-family: 'HelveticaNeue', sans-serif;
-  font-size: 2rem;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(4, 20, 44, 0.76);
-}
-
 .Text-Style-3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
@@ -106,16 +118,4 @@
   letter-spacing: normal;
   text-align: left;
   color: rgba(229, 229, 229, 0.76);
-}
-
-.Text-Style-7 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.18;
-  letter-spacing: -0.4px;
-  text-align: left;
-  color: #ffffff;
 }

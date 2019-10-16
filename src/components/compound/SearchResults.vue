@@ -1,8 +1,8 @@
 <template>
     <div class="search-results">
-        <div>
+        <div class="search-bar">
             <img src="../../assets/SearchIcon.svg">
-            <div class="Text-Style-5">Graduate College</div>
+            <div class="Text-Section-Description">Graduate College</div>
         </div>
         <ConstellationSearch></ConstellationSearch>
         <ConstellationSearch :relevant="false"></ConstellationSearch>
@@ -30,6 +30,13 @@ export default {
         justify-content: center;
         align-items: center;
         position: relative;
+    }
+
+    .search-bar {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
     }
 
     .curtain {

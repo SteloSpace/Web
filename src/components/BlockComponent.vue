@@ -1,8 +1,10 @@
 <template>
     <div class="container">
         <div class="context-section">
-            <h2 class="Section-Header">{{ header }}</h2>
-            <div class="Text-Style-5">
+            <div id="header" class="Text-Section-Header">
+                <slot name="header"/>
+            </div>
+            <div class="Text-Section-Description">
                 <slot name="content"/>
             </div>
         </div>
@@ -12,13 +14,8 @@
 </template>
 
 <script>
-export default {
-	props: {
-		header: { type: String }
-	}
-}
+export default {}
 </script>
-
 
 <style lang="scss" scoped>
     .container {
@@ -48,7 +45,10 @@ export default {
     .context-section {
         min-width: 320px;
         max-width: 45%;
-        // margin-right: 10rem;
+    }
+
+    #header {
+        margin-bottom: 3rem;
     }
 
     .animation-section {
