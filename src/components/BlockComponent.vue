@@ -19,13 +19,14 @@ export default {}
 
 <style lang="scss" scoped>
     .container {
-        height: 100vh;
-        min-height: 650px;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: space-between;
+        min-height: 650px;
         padding-left: 5rem;
         position: relative;
+        scroll-snap-align: start;
 
         @media only screen and (max-width: 900px) {
             flex-wrap: wrap;

@@ -116,13 +116,23 @@ export default {
 </script>
 
 <style lang="scss">
+    * {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+
     .test {
         background: rgba(255, 255, 0, 0.349);
         border: 1px solid red;
     }
 
     #app {
+        box-sizing: border-box;
         overflow-x: hidden;
+        overflow-y: scroll;
+        max-height: 100vh;
         width: 100%;
+        scroll-snap-type: y mandatory;
     }
 </style>
