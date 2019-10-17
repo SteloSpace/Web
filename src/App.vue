@@ -1,23 +1,25 @@
 <template>
     <div id="app">
-        <BlockComponent>
+        <BlockComponent first=true>
             <template slot="header">
                 Stelo
             </template>
             <template slot="content">
                 Share your Experiences
                 <br>
-                Coming Soon
+                <div class="Text-Section-Description" style="margin-top: 7em">
+                    Coming Soon
+                </div>
             </template>
 
             <div slot="imageSection" class="animation-section">
-                <img src="./assets/artboardWithPeople.svg" width="100%">
+                <img src="./assets/PeopleSkyStar.svg" style="position: absolute; height: 93%; right: 0; top: 0;">
             </div>
         </BlockComponent>
 
         <BlockComponent>
             <template slot="header">
-                Create & Share 
+                Create & Share
                 <br>
                 Constellations
             </template>

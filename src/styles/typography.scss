@@ -2,7 +2,7 @@
 
 .Stelo-Logo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 104px;
+  font-size: 70px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -12,16 +12,28 @@
   color: $navy;
 }
 
-.Text-Style-9 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 64px;
-  font-weight: 500;
+// .Text-Style-9 {
+//   font-family: 'Montserrat', sans-serif;
+//   font-size: 64px;
+//   font-weight: 500;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: 1.22;
+//   letter-spacing: normal;
+//   text-align: left;
+//   color: #ffffff;
+// }
+
+.Text-First-Section-Description {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 48px;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.22;
+  line-height: 1.19em;
   letter-spacing: normal;
   text-align: left;
-  color: #ffffff;
+  color: rgba(4, 20, 44, 0.76);
 }
 
 .Text-Section-Header {
