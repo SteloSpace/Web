@@ -7,7 +7,9 @@
             <template slot="content">
                 Share your Experiences
                 <br>
-                <div class="Text-Section-Description" style="margin-top: 7em">
+            </template>
+            <template slot="other" >
+                <div class="Text-Section-Description" style="position: absolute; bottom: 9em">
                     Coming Soon
                 </div>
             </template>
