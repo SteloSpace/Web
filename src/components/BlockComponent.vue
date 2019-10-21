@@ -1,12 +1,13 @@
 <template>
     <div class="container">
         <div class="context-section">
-            <div id="header" class="Text-Section-Header">
+            <div :class="[first ? 'Stelo-Logo' : 'Text-Section-Header section']">
                 <slot name="header"/>
             </div>
-            <div class="Text-Section-Description">
+            <div :class="[first ? 'Text-First-Section-Description' : 'Text-Section-Description']">
                 <slot name="content"/>
             </div>
+            <slot name="other"/>
         </div>
 
         <slot name="imageSection"/>
@@ -14,7 +15,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+    props: {
+        first: {
+            type: Boolean,
+            default: false,
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -48,7 +56,7 @@ export default {}
         max-width: 45%;
     }
 
-    #header {
+    .section {
         margin-bottom: 40px;
     }
 
