@@ -27,6 +27,7 @@ export default {
 
     p {
         font-size: 28px;
+        color: inherit;
     }
 
     .grey {

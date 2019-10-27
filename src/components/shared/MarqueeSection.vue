@@ -5,7 +5,7 @@
                 Starting with the topics you need most
             </h2>
 
-            With more coming soon
+            <p>With more coming soon</p>
         </div>
 
         <div class="background">
@@ -53,7 +53,7 @@ export default {
             left: 0;
             width: 100vw;
             height: 100%;
-            background-image: linear-gradient(#fff 25%, #0000 40%, #0000 60%, #fff 75%);
+            background-image: linear-gradient(rgba(255, 255, 255, .8) 30%, #0000 40%, #0000 60%, rgba(255, 255, 255, .8) 75%);
         }
     }
 
