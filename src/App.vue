@@ -44,7 +44,7 @@
                 From other users
             </template>
             <template slot="content">
-                Add Stars 
+                Add Stars
                 <br>
                 From user's constellations
             </template>
@@ -78,7 +78,7 @@
                 Of your progress
             </template>
             <template slot="content">
-                Stay on track with 
+                Stay on track with
                 <br>
                 your goals
             </template>
@@ -88,17 +88,7 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent>
-            <template slot="header">
-                Starting with the topics you need most
-            </template>
-            <template slot="content">
-                *marquee*
-                With more coming soon
-            </template>
-
-            <div class="animation-section" slot="imageSection"/>
-        </BlockComponent>
+        <MarqueeSection/>
 
         <BlockComponent>
             <template slot="header">
@@ -123,14 +113,16 @@ import NewsletterComponent from './components/NewsletterComponent.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup.vue'
 import SearchResults from './components/compound/SearchResults.vue'
 import ButtonComponent from './components/shared/ButtonComponent.vue'
+import MarqueeSection from './components/shared/MarqueeSection'
 
 export default {
 	components: {
+		MarqueeSection,
 		BlockComponent,
-        ConstellationGroup,
-        NewsletterComponent,
-        SearchResults,
-        ButtonComponent,
+		ConstellationGroup,
+		NewsletterComponent,
+		SearchResults,
+		ButtonComponent,
 	},
 }
 </script>
