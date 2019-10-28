@@ -1,28 +1,10 @@
 <template>
     <div class="container">
-        <div class="row">
-            <MarqueeCard card="card" label="Education" color-scheme="teal"></MarqueeCard>
-            <MarqueeCard card="card" label="Careers" color-scheme="blue"></MarqueeCard>
-            <MarqueeCard card="card" label="Wellbeing" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Design" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Health" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Finances" color-scheme="grey"></MarqueeCard>
-        </div>
-        <div class="row">
-            <MarqueeCard card="card" label="Education" color-scheme="teal"></MarqueeCard>
-            <MarqueeCard card="card" label="Careers" color-scheme="blue"></MarqueeCard>
-            <MarqueeCard card="card" label="Wellbeing" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Design" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Health" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Finances" color-scheme="grey"></MarqueeCard>
-        </div>
-        <div class="row">
-            <MarqueeCard card="card" label="Education" color-scheme="teal"></MarqueeCard>
-            <MarqueeCard card="card" label="Careers" color-scheme="blue"></MarqueeCard>
-            <MarqueeCard card="card" label="Wellbeing" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Design" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Health" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard card="card" label="Finances" color-scheme="grey"></MarqueeCard>
+        <div class="row" v-for="n in 3" :key="n">
+            <MarqueeCard v-for="card in cards"
+                         :key="card"
+                         :label="card.label"
+                         :color-scheme="card.color"/>
         </div>
     </div>
 </template>
@@ -31,6 +13,15 @@
 import MarqueeCard from '../shared/MarqueeCard'
 
 export default {
+	data: () => ({
+		cards: {
+			education: { label: 'Education', color: 'teal' },
+			careers: { label: 'Careers', color: 'blue' },
+			wellBeing: { label: 'Well-being', color: 'grey' },
+			design: { label: 'Design', color: 'grey' },
+			health: { label: 'Health', color: 'grey' },
+		}
+	}),
 	components: {
 		MarqueeCard
 	}
@@ -50,12 +41,8 @@ export default {
     }
 
     @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(100%);
-        }
+        0% { transform: translateX(0) }
+        100% { transform: translateX(100%) }
     }
 
 </style>

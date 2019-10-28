@@ -32,13 +32,13 @@ export default {
 
 <style lang="scss" scoped>
     .background-container {
-        padding: 100px 0;
         scroll-snap-align: start;
-        position: relative;
         display: flex;
         justify-content: center;
         text-align: center;
         height: calc(100vh - 200px);
+        position: relative;
+        padding: 100px 0;
     }
 
     .background {
@@ -49,11 +49,15 @@ export default {
         &::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
             width: 100vw;
             height: 100%;
-            background-image: linear-gradient(rgba(255, 255, 255, .8) 30%, #0000 40%, #0000 60%, rgba(255, 255, 255, .8) 75%);
+            background-image: linear-gradient(
+                    rgba(255, 255, 255, .8) 30%,
+                    #0000,
+                    rgba(255, 255, 255, .8) 75%
+            );
         }
     }
 
@@ -68,7 +72,7 @@ export default {
         justify-content: space-between;
         position: absolute;
         height: inherit;
-        max-width: 690px;
+        max-width: 600px;
         z-index: 1;
     }
 </style>

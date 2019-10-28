@@ -1,28 +1,10 @@
 <template>
     <div class="container">
-        <div class="row">
-            <MarqueeCard label="Education" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Careers" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Wellbeing" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Design" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Health" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Finances" color-scheme="grey"></MarqueeCard>
-        </div>
-        <div class="row">
-            <MarqueeCard label="Education" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Careers" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Wellbeing" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Design" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Health" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Finances" color-scheme="grey"></MarqueeCard>
-        </div>
-        <div class="row">
-            <MarqueeCard label="Education" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Careers" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Wellbeing" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Design" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Health" color-scheme="grey"></MarqueeCard>
-            <MarqueeCard label="Finances" color-scheme="grey"></MarqueeCard>
+        <div class="row" v-for="n in 3" :key="n">
+            <MarqueeCard v-for="content in contents"
+                         :key="content"
+                         :label="content"
+                         color-scheme="grey"/>
         </div>
     </div>
 </template>
@@ -31,6 +13,16 @@
 import MarqueeCard from '../shared/MarqueeCard'
 
 export default {
+	data: () => ({
+		contents: [
+			'Education',
+			'Careers',
+			'Well-being',
+			'Design',
+			'Health',
+			'Finances',
+		]
+	}),
 	components: {
 		MarqueeCard
 	}
@@ -51,12 +43,8 @@ export default {
     }
 
     @keyframes marquee {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
+        0% { transform:  translateX(0) }
+        100% { transform: translateX(-100%); }
     }
 
 </style>
