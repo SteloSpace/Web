@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <BlockComponent first=true>
+        <BlockComponent :first=true>
             <template slot="header">
                 Stelo
             </template>
@@ -44,7 +44,7 @@
                 From other users
             </template>
             <template slot="content">
-                Add Stars 
+                Add Stars
                 <br>
                 From user's constellations
             </template>
@@ -78,7 +78,7 @@
                 Of your progress
             </template>
             <template slot="content">
-                Stay on track with 
+                Stay on track with
                 <br>
                 your goals
             </template>
@@ -100,20 +100,24 @@
             <div class="animation-section" slot="imageSection"/>
         </BlockComponent>
 
-        <BlockComponent>
-            <template slot="header">
-                Stay in touch
-                <br>
-                Subscribe to our newsletter
-            </template>
-            <template slot="content">
-                No spam. We promise.
-            </template>
+        <div style="position: relative;">
+            <BlockComponent>
+                <template slot="header">
+                    Stay in touch
+                    <br>
+                    Subscribe to our newsletter
+                </template>
+                <template slot="content">
+                    No spam. We promise.
+                </template>
 
-            <div slot="imageSection" class="animation-section">
-                <NewsletterComponent></NewsletterComponent>
-            </div>
-        </BlockComponent>
+                <div slot="imageSection" class="animation-section">
+                    <NewsletterComponent @displayThankYou="display" :subscribed="false"/>
+                </div>
+            </BlockComponent>
+            <ThankYouSection v-show="isSubscribed" :renderDetails="animatedButton"/>
+        </div>
+
     </div>
 </template>
 
@@ -123,15 +127,27 @@ import NewsletterComponent from './components/NewsletterComponent.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup.vue'
 import SearchResults from './components/compound/SearchResults.vue'
 import ButtonComponent from './components/shared/ButtonComponent.vue'
+import ThankYouSection from './components/ThankYouSection'
 
 export default {
 	components: {
 		BlockComponent,
-        ConstellationGroup,
-        NewsletterComponent,
-        SearchResults,
-        ButtonComponent,
+		ConstellationGroup,
+		NewsletterComponent,
+		SearchResults,
+		ButtonComponent,
+		ThankYouSection
 	},
+	data: () => ({
+		isSubscribed: false,
+		animatedButton: {},
+	}),
+	methods: {
+		display(animatedButton) {
+			this.isSubscribed = true
+			this.animatedButton = animatedButton.$el.getBoundingClientRect()
+		}
+	}
 }
 </script>
 
@@ -140,11 +156,6 @@ export default {
         padding: 0;
         margin: 0;
         scroll-behavior: smooth;
-    }
-
-    .test {
-        background: rgba(255, 255, 0, 0.349);
-        border: 1px solid red;
     }
 
     #app {
