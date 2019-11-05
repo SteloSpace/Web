@@ -39,7 +39,7 @@ export default {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: calc(100vw - 40px);
+        width: 100%;
     }
 
     @keyframes test {
