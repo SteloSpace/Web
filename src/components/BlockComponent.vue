@@ -29,9 +29,8 @@ export default {
     .container {
         align-items: center;
         display: flex;
-        height: 100vh;
+        min-height: 100vh;
         justify-content: space-between;
-        min-height: 650px;
         padding-left: 5rem;
         position: relative;
         scroll-snap-align: start;
@@ -53,7 +52,7 @@ export default {
 
     .context-section {
         min-width: 320px;
-        /*max-width: 45%;*/
+        max-width: 45%;
     }
 
     .section {
@@ -61,8 +60,8 @@ export default {
     }
 
     .animation-section {
-        height: 100%;
-        width: 54%;
+        width: 100%;
+        padding: 100px 0;
         display: flex;
         align-items: center;
         justify-content: center;

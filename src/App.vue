@@ -1,23 +1,6 @@
 <template>
     <div id="app">
-        <BlockComponent :first=true>
-            <template slot="header">
-                Stelo
-            </template>
-            <template slot="content">
-                Share your Experiences
-                <br>
-            </template>
-            <template slot="other" >
-                <p style="position: absolute; bottom: 9em">
-                    Coming Soon
-                </p>
-            </template>
-
-            <div slot="imageSection" class="animation-section">
-                <img src="./assets/PeopleSkyStar.svg" style="position: absolute; height: 93%; right: 0; top: 0;">
-            </div>
-        </BlockComponent>
+        <IntroductionSection/>
 
         <BlockComponent>
             <template slot="header">
@@ -129,9 +112,11 @@ import SearchResults from './components/compound/SearchResults.vue'
 import ButtonComponent from './components/shared/ButtonComponent.vue'
 import MarqueeSection from './components/shared/MarqueeSection'
 import ThankYouSection from './components/ThankYouSection'
+import IntroductionSection from './IntroductionSection'
 
 export default {
 	components: {
+		IntroductionSection,
 		MarqueeSection,
 		BlockComponent,
 		ConstellationGroup,
