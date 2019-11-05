@@ -99,20 +99,25 @@
 
         <MarqueeSection/>
 
-        <BlockComponent>
-            <template slot="header">
-                Stay in touch
-                <br>
-                Subscribe to our newsletter
-            </template>
-            <template slot="content">
-                <p>No spam. We promise.</p>
-            </template>
 
-            <div slot="imageSection" class="animation-section">
-                <NewsletterComponent></NewsletterComponent>
-            </div>
-        </BlockComponent>
+        <div style="position: relative;">
+            <BlockComponent>
+                <template slot="header">
+                    Stay in touch
+                    <br>
+                    Subscribe to our newsletter
+                </template>
+                <template slot="content">
+                    No spam. We promise.
+                </template>
+
+                <div slot="imageSection" class="animation-section">
+                    <NewsletterComponent @displayThankYou="display" :subscribed="false"/>
+                </div>
+            </BlockComponent>
+            <ThankYouSection v-show="isSubscribed" :renderDetails="animatedButton"/>
+        </div>
+
     </div>
 </template>
 
@@ -123,6 +128,7 @@ import ConstellationGroup from './components/compound/ConstellationGroup.vue'
 import SearchResults from './components/compound/SearchResults.vue'
 import ButtonComponent from './components/shared/ButtonComponent.vue'
 import MarqueeSection from './components/shared/MarqueeSection'
+import ThankYouSection from './components/ThankYouSection'
 
 export default {
 	components: {
@@ -132,7 +138,18 @@ export default {
 		NewsletterComponent,
 		SearchResults,
 		ButtonComponent,
+		ThankYouSection
 	},
+	data: () => ({
+		isSubscribed: false,
+		animatedButton: {},
+	}),
+	methods: {
+		display(animatedButton) {
+			this.isSubscribed = true
+			this.animatedButton = animatedButton.$el.getBoundingClientRect()
+		}
+	}
 }
 </script>
 
@@ -141,11 +158,6 @@ export default {
         padding: 0;
         margin: 0;
         scroll-behavior: smooth;
-    }
-
-    .test {
-        background: rgba(255, 255, 0, 0.349);
-        border: 1px solid red;
     }
 
     #app {
