@@ -16,12 +16,12 @@
 
 <script>
 export default {
-    props: {
-        first: {
-            type: Boolean,
-            default: false,
-        }
-    }
+	props: {
+		first: {
+			type: Boolean,
+			default: false,
+		}
+	}
 }
 </script>
 
@@ -53,7 +53,7 @@ export default {
 
     .context-section {
         min-width: 320px;
-        max-width: 45%;
+        /*max-width: 45%;*/
     }
 
     .section {
