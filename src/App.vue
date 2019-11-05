@@ -9,9 +9,9 @@
                 <br>
             </template>
             <template slot="other" >
-                <div class="Text-Section-Description" style="position: absolute; bottom: 9em">
+                <p style="position: absolute; bottom: 9em">
                     Coming Soon
-                </div>
+                </p>
             </template>
 
             <div slot="imageSection" class="animation-section">
@@ -26,9 +26,12 @@
                 Constellations
             </template>
             <template slot="content">
-                Pathways to your future goals
-                <br>
-                or the goals you have already achieved
+                <p>
+                    Pathways to your future goals
+                    <br>
+                    or the goals you have already achieved
+                </p>
+
                 <ButtonComponent value="Try creating your own" style="margin-top: 1em;"/>
             </template>
 
@@ -44,9 +47,11 @@
                 From other users
             </template>
             <template slot="content">
-                Add Stars
-                <br>
-                From user's constellations
+                <p>
+                    Add Stars
+                    <br>
+                    From user's constellations
+                </p>
             </template>
 
             <div slot="imageSection" class="animation-section">
@@ -61,9 +66,11 @@
                 Relevant to you
             </template>
             <template slot="content">
-                Get information
-                <br>
-                Tailored to your past experiences
+                <p>
+                    Get information
+                    <br>
+                    Tailored to your past experiences
+                </p>
             </template>
 
             <div slot="imageSection" class="animation-section">
@@ -78,9 +85,11 @@
                 Of your progress
             </template>
             <template slot="content">
-                Stay on track with
-                <br>
-                your goals
+                <p>
+                    Stay on track with
+                    <br>
+                    your goals
+                </p>
             </template>
 
             <div slot="imageSection" class="animation-section">
@@ -88,17 +97,8 @@
             </div>
         </BlockComponent>
 
-        <BlockComponent>
-            <template slot="header">
-                Starting with the topics you need most
-            </template>
-            <template slot="content">
-                *marquee*
-                With more coming soon
-            </template>
+        <MarqueeSection/>
 
-            <div class="animation-section" slot="imageSection"/>
-        </BlockComponent>
 
         <div style="position: relative;">
             <BlockComponent>
@@ -127,10 +127,12 @@ import NewsletterComponent from './components/NewsletterComponent.vue'
 import ConstellationGroup from './components/compound/ConstellationGroup.vue'
 import SearchResults from './components/compound/SearchResults.vue'
 import ButtonComponent from './components/shared/ButtonComponent.vue'
+import MarqueeSection from './components/shared/MarqueeSection'
 import ThankYouSection from './components/ThankYouSection'
 
 export default {
 	components: {
+		MarqueeSection,
 		BlockComponent,
 		ConstellationGroup,
 		NewsletterComponent,
