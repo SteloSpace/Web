@@ -1,5 +1,6 @@
 <template>
     <div style="position: relative;">
+
         <BlockComponent>
             <template slot="header">
                 Stay in touch

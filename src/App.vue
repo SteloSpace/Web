@@ -40,7 +40,7 @@ export default {
 	methods: {
 		display(animatedButton) {
 			this.isSubscribed = true
-			this.animatedButton = animatedButton.$el.getBoundingClientRect()
+			this.animatedButton = animatedButton.firstChild.getBoundingClientRect()
 		}
 	}
 }

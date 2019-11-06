@@ -34,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 
     .background {
-        animation: test 2s ease-in-out .3s forwards;
+        animation: showSky 2s ease-in-out .3s forwards;
         clip-path: circle(0 at var(--location));
         background: $midnight;
         position: absolute;
@@ -43,7 +43,7 @@ export default {
         width: 100%;
     }
 
-    @keyframes test {
+    @keyframes showSky {
         100% {
             clip-path: circle(1000px at center);
             .background {
