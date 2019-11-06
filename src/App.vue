@@ -1,129 +1,37 @@
 <template>
     <div id="app">
         <IntroductionSection/>
-
-        <BlockComponent>
-            <template slot="header">
-                Create & Share
-                <br>
-                Constellations
-            </template>
-            <template slot="content">
-                <p>
-                    Pathways to your future goals
-                    <br>
-                    or the goals you have already achieved
-                </p>
-
-                <ButtonComponent value="Try creating your own" style="margin-top: 1em;"/>
-            </template>
-
-            <div slot="imageSection" class="animation-section">
-                <ConstellationGroup/>
-            </div>
-        </BlockComponent>
-
-        <BlockComponent header="Get help From other users">
-            <template slot="header">
-                Get help
-                <br>
-                From other users
-            </template>
-            <template slot="content">
-                <p>
-                    Add Stars
-                    <br>
-                    From user's constellations
-                </p>
-            </template>
-
-            <div slot="imageSection" class="animation-section">
-                <ConstellationGroup/>
-            </div>
-        </BlockComponent>
-
-        <BlockComponent>
-            <template slot="header">
-                Find the experience
-                <br>
-                Relevant to you
-            </template>
-            <template slot="content">
-                <p>
-                    Get information
-                    <br>
-                    Tailored to your past experiences
-                </p>
-            </template>
-
-            <div slot="imageSection" class="animation-section">
-                <SearchResults/>
-            </div>
-        </BlockComponent>
-
-        <BlockComponent>
-            <template slot="header">
-                Keep track
-                <br>
-                Of your progress
-            </template>
-            <template slot="content">
-                <p>
-                    Stay on track with
-                    <br>
-                    your goals
-                </p>
-            </template>
-
-            <div slot="imageSection" class="animation-section">
-                <ConstellationGroup/>
-            </div>
-        </BlockComponent>
-
+        <CreateSection/>
+        <GetHelpSection/>
+        <SearchSection/>
+        <ProgressSection/>
         <MarqueeSection/>
-
-
-        <div style="position: relative;">
-            <BlockComponent>
-                <template slot="header">
-                    Stay in touch
-                    <br>
-                    Subscribe to our newsletter
-                </template>
-                <template slot="content">
-                    <p>No spam. We promise.</p>
-                </template>
-
-                <div slot="imageSection" class="animation-section">
-                    <NewsletterComponent @displayThankYou="display" :subscribed="false"/>
-                </div>
-            </BlockComponent>
-            <ThankYouSection v-show="isSubscribed" :renderDetails="animatedButton"/>
-        </div>
-
+        <NewsletterSection
+            :animated-button="animatedButton"
+            :display="display"
+            :is-subscribed="isSubscribed"
+        />
     </div>
 </template>
 
 <script>
-import BlockComponent from './components/BlockComponent.vue'
-import NewsletterComponent from './components/NewsletterComponent.vue'
-import ConstellationGroup from './components/compound/ConstellationGroup.vue'
-import SearchResults from './components/compound/SearchResults.vue'
-import ButtonComponent from './components/shared/ButtonComponent.vue'
 import MarqueeSection from './components/shared/MarqueeSection'
-import ThankYouSection from './components/ThankYouSection'
-import IntroductionSection from './IntroductionSection'
+import SearchSection from './components/SearchSection'
+import GetHelpSection from './components/GetHelpSection'
+import CreateSection from './components/CreateSection'
+import ProgressSection from './components/ProgressSection'
+import NewsletterSection from './components/NewsletterSection'
+import IntroductionSection from './components/IntroductionSection'
 
 export default {
 	components: {
+		SearchSection,
+		GetHelpSection,
+		CreateSection,
+		ProgressSection,
+		NewsletterSection,
 		IntroductionSection,
-		MarqueeSection,
-		BlockComponent,
-		ConstellationGroup,
-		NewsletterComponent,
-		SearchResults,
-		ButtonComponent,
-		ThankYouSection
+		MarqueeSection
 	},
 	data: () => ({
 		isSubscribed: false,

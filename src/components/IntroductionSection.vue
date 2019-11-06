@@ -10,7 +10,7 @@
             </p>
         </div>
 
-        <img id="testImg" src="./assets/PeopleSkyStar.svg">
+        <img id="banner" src="../assets/PeopleSkyStar.svg">
     </div>
 </template>
 <script>
@@ -37,7 +37,7 @@ export default {
             height: inherit;
         }
 
-        #testImg {
+        #banner {
             max-height: 93vh;
             position: absolute;
             top: 0;
@@ -47,7 +47,7 @@ export default {
         @media only screen and (max-width: 800px) {
             flex-wrap: wrap;
             flex-direction: column-reverse;
-            #testImg {
+            #banner {
                 max-height: unset;
                 max-width: 500px;
             }
@@ -57,17 +57,10 @@ export default {
             .context-section {
                 height: 50vh;
             }
-            #testImg {
+            #banner {
                 max-height: unset;
                 max-width: 400px;
             }
         }
     }
-
-    * {
-        padding: 0;
-        margin: 0;
-        scroll-behavior: smooth;
-    }
-
 </style>

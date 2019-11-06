@@ -11,8 +11,9 @@
 </template>
 
 <script>
-import ButtonComponent from './shared/ButtonComponent.vue'
-import InputField from './shared/InputField.vue'
+
+import ButtonComponent from '../shared/ButtonComponent'
+import InputField from '../shared/InputField'
 
 export default {
 	components: {

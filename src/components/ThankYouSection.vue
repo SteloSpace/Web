@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import BlockComponent from './BlockComponent'
+
+import BlockComponent from './shared/BlockComponent'
 
 export default {
 	components: {
