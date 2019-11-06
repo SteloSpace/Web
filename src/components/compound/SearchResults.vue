@@ -27,13 +27,11 @@ export default {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         align-items: center;
         position: relative;
     }
 
     .search-bar {
-        width: 80%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 3rem;

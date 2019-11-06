@@ -15,7 +15,7 @@
             <ButtonComponent value="Try creating your own" style="margin-top: 1em;"/>
         </template>
 
-        <div slot="imageSection" class="animation-section">
+        <div slot="imageSection">
             <ConstellationGroup/>
         </div>
     </BlockComponent>

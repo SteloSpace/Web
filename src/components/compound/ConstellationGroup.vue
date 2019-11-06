@@ -1,6 +1,6 @@
 <template>
     <div id="root">
-        <div class="container" ref="card">
+        <div class="container">
             <ConstellationCard
                 title="Get a Dribbble or (and) Behance account."
                 description="Use dribbble to get people excited about the project.
@@ -30,20 +30,6 @@ export default {
 	components: {
 		ConstellationCard,
 	},
-	data:() => ({
-		cardSize: this.$refs.card
-	}),
-	mounted() {
-		console.log('hiii', this.cardSize)
-	},
-	watch: {
-		cardSize() {
-			console.log('resized', this.cardSize)
-			// document.documentElement.style.setProperty('--offset',
-			// 	`${this.renderDetails.left + this.renderDetails.width/2}px`
-			// )
-		}
-	}
 }
 </script>
 
@@ -56,7 +42,7 @@ export default {
         align-items: flex-start;
         justify-content: center;
         overflow: hidden;
-        margin-right: -(var(--location));
+        margin-right: -160px;
     }
 
     .container {

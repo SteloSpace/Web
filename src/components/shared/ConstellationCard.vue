@@ -30,11 +30,15 @@ export default {
 }
 </script>
 
+
 <style scoped lang="scss">
-    $width: 200px;
+    $width-md: 200px;
+    $width-sm: 150px;
+    $width-xs: 100px;
+
     .card-background {
-        height: 1.4*$width;
-        width: $width;
+        height: 1.4*$width-md;
+        width: $width-md;
         padding: 46px 21px 47px 30px;
         background-image: $constellation-card-bg;
         border-radius: 20px;
@@ -70,5 +74,41 @@ export default {
         right: 0;
         width: 32px;
         height: 32px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .card-background {
+            width: $width-sm;
+            height: 1.4*$width-sm;
+            margin: 20px;
+        }
+
+        .header-white {
+            font-size: 1rem;
+        }
+
+        .card-description {
+            font-size: .5rem
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .card-background {
+            width: $width-xs;
+            height: 1.4*$width-xs;
+            margin: 15px;
+            padding: 30px 21px 30px;
+        }
+
+        .text-white {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+
+        #progress {
+            width: 20px;
+            height: 20px;
+        }
     }
 </style>

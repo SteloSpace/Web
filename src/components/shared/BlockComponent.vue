@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <div class="context-section">
-            <div :class="[first ? 'heading-primary' : 'heading-secondary section']">
+            <div class="heading-secondary header">
                 <slot name="header"/>
             </div>
-            <div :class="[first ? 'heading-tertiary' : 'Text-Section-Description']">
-                <slot name="content"/>
-            </div>
+
+            <slot name="content"/>
+
             <slot name="other"/>
         </div>
 
@@ -37,15 +37,16 @@ export default {
 
         @media only screen and (max-width: 900px) {
             flex-wrap: wrap;
+
+            div:last-of-type {
+                flex-grow: 1;
+            }
         }
         @media only screen and (max-width: 500px) {
             padding-left: 1rem;
             .context-section {
                 min-width: unset;
                 max-width: unset;
-            }
-            .animation-section {
-                width: 100%;
             }
         }
     }
@@ -55,16 +56,12 @@ export default {
         max-width: 45%;
     }
 
-    .section {
+    .header {
         margin-bottom: 40px;
     }
 
-    .animation-section {
+    .animation-section-center {
         width: 100%;
-        padding: 100px 0;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        position: relative;
     }
 </style>

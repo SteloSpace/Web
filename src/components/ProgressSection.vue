@@ -13,7 +13,7 @@
             </p>
         </template>
 
-        <div slot="imageSection" class="animation-section">
+        <div slot="imageSection">
             <ConstellationGroup/>
         </div>
     </BlockComponent>

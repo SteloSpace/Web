@@ -35,6 +35,8 @@
   line-height: 1.4em;
   text-align: left;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
 
 p, .text-primary{

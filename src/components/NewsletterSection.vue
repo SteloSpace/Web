@@ -10,7 +10,7 @@
                 <p>No spam. We promise.</p>
             </template>
 
-            <div slot="imageSection" class="animation-section">
+            <div slot="imageSection" class="animation-section-center">
                 <NewsletterComponent @displayThankYou="display" :subscribed="false"/>
             </div>
         </BlockComponent>
