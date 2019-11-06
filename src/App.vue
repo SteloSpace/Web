@@ -63,4 +63,8 @@ export default {
         scroll-snap-type: mandatory;
         scroll-snap-points-y: repeat(100vh);
     }
+
+    #app > div {
+        margin-bottom: 100px;
+    }
 </style>
