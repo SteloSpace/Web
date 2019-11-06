@@ -29,6 +29,14 @@ export default {
         flex-direction: column;
         align-items: center;
         position: relative;
+
+        @media only screen and (max-width: 1400px) {
+            margin-top: 30px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            margin-top: 20px;
+        }
     }
 
     .search-bar {
@@ -43,5 +51,9 @@ export default {
         width: 100%;
         height: 60%;
         background-image: linear-gradient(#0000, #fff);
+    }
+
+    img {
+        margin-right: 50px;
     }
 </style>

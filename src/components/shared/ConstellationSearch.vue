@@ -17,17 +17,23 @@ export default {
 
 <style scoped lang="scss">
 
-    $search-height: 90px;
+    $width-md: 400px;
+    $width-sm: 300px;
 
     .search-result {
-        width: 400px;
-        height: $search-height;
+        width: $width-md;
+        height: $width-md/4.4;
         margin: 10px 0;
         border-radius: 20px;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
+        @media only screen and (max-width: 1400px) {
+            width: $width-sm;
+            height: $width-sm/4.4;
+        }
     }
 
     .bg-relevant {

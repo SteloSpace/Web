@@ -41,13 +41,12 @@ export default {
             div:last-of-type {
                 flex-grow: 1;
             }
+            .context-section {
+                max-width: unset;
+            }
         }
         @media only screen and (max-width: 500px) {
             padding-left: 1rem;
-            .context-section {
-                min-width: unset;
-                max-width: unset;
-            }
         }
     }
 

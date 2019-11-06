@@ -13,7 +13,7 @@
             </p>
         </template>
 
-        <div slot="imageSection" class="animation-section-center">
+        <div slot="imageSection" class="searchComponent">
             <SearchResults/>
         </div>
     </BlockComponent>
@@ -30,3 +30,13 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+    .searchComponent {
+        margin: 50px 200px -100px;
+
+        @media only screen and (max-width: 600px) {
+            margin: 50px 0;
+        }
+    }
+</style>
