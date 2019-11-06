@@ -1,13 +1,11 @@
 <template>
     <div class="container">
         <div class="context-section">
-            <div :class="[first ? 'Stelo-Logo' : 'Text-Section-Header section']">
-                Stelo
-            </div>
-            <div :class="[first ? 'Text-First-Section-Description' : 'Text-Section-Description']">
+            <h1 class="heading-primary">Stelo</h1>
+            <p class="heading-tertiary">
                 Share your Experiences
-            </div>
-            <p>
+            </p>
+            <p class="text-secondary">
                 Coming Soon
             </p>
         </div>

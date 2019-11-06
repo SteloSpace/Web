@@ -1,126 +1,64 @@
 @import "colors";
 
-.Stelo-Logo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 70px;
+.heading-primary, .heading-secondary, .heading-tertiary {
+  font-family: 'HelveticaNeue', sans-serif;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.22;
-  letter-spacing: normal;
-  text-align: left;
-  color: $navy;
 }
 
-// .Text-Style-9 {
-//   font-family: 'Montserrat', sans-serif;
-//   font-size: 64px;
-//   font-weight: 500;
-//   font-style: normal;
-//   font-stretch: normal;
-//   line-height: 1.22;
-//   letter-spacing: normal;
-//   text-align: left;
-//   color: #ffffff;
-// }
-
-.Text-First-Section-Description {
+.text-primary, .text-secondary, .text-tertiary, .text-white, .text-light, p {
   font-family: 'HelveticaNeue', sans-serif;
-  font-size: 48px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.19em;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(4, 20, 44, 0.76);
-}
-
-.Text-Section-Header {
-  font-family: 'Open Sans';
-  font-size: 48px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  color: $navy;
-}
-
-p {
-  font-family: 'HelveticaNeue', sans-serif;
+  line-height: 1.25;
   font-size: 26px;
-  line-height: 1.19em;
-  color: rgba(4, 20, 44, 0.76);
 }
 
-.Text-Card-Title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.4em;
-  text-align: left;
-  color: #ffffff;
+.heading-primary {
+  font-size: 70px;
+  color: $navy;
 }
 
-.Text-Card-Description {
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+.heading-secondary {
+  font-size: 48px;
+  color: $navy;
+}
+
+.heading-tertiary {
+  font-size: 48px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: -0.4px;
-  text-align: left;
-  color: #ffffff;
-}
-
-.Catchphrase {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 64px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: left;
   color: $navy-36;
 }
 
-.Text-Style-8 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 38px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.18;
-  letter-spacing: normal;
+.header-white {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.4em;
   text-align: left;
-  color: #393939;
+  color: white;
 }
 
-.Text-Style-3 {
-  font-family: 'Montserrat', sans-serif;
+p, .text-primary{
+  color: $navy-76;
+}
+
+.text-secondary {
   font-size: 32px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  text-align: left;
   color: $navy-25;
 }
 
-.Text-Style-10 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(229, 229, 229, 0.76);
+.text-tertiary {
+  color: $grey;
 }
+
+.text-white {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: white;
+}
+
+.text-light {
+  font-size: 32px;
+  color: $grey-76;
+}
+

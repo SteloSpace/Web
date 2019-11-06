@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <div class="context-section">
-            <div :class="[first ? 'Stelo-Logo' : 'Text-Section-Header section']">
+            <div :class="[first ? 'heading-primary' : 'heading-secondary section']">
                 <slot name="header"/>
             </div>
-            <div :class="[first ? 'Text-First-Section-Description' : 'Text-Section-Description']">
+            <div :class="[first ? 'heading-tertiary' : 'Text-Section-Description']">
                 <slot name="content"/>
             </div>
             <slot name="other"/>

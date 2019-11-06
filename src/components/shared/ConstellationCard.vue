@@ -2,30 +2,30 @@
     <div class="card-background">
 
         <div class="card-header">
-            <div class="card-title Text-Card-Title">{{title}}</div>
+            <div class="card-title header-white">{{title}}</div>
             <ProgressCircle :completed="completed" id="progress"/>
         </div>
 
-        <div class="card-description Text-Card-Description">
+        <div class="card-description text-white">
             {{description}}
         </div>
     </div>
 </template>
 
 <script>
-import ProgressCircle from "./ProgressCircle.vue"
+import ProgressCircle from './ProgressCircle.vue'
 
 export default {
-    components: {
-        ProgressCircle
-    },
-    props: {
+	components: {
+		ProgressCircle
+	},
+	props: {
 		title: { type: String },
-        description: { type: String },
-        completed: {
-            type: Boolean,
-            default: false
-        },
+		description: { type: String },
+		completed: {
+			type: Boolean,
+			default: false
+		},
 	}
 }
 </script>

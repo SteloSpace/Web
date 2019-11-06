@@ -1,7 +1,7 @@
 <template>
     <div class="background-container">
         <div class="text">
-            <h2 class="Text-Section-Header section">
+            <h2 class="heading-secondary section">
                 Starting with the topics you need most
             </h2>
 

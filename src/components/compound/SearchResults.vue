@@ -2,7 +2,7 @@
     <div class="search-results">
         <div class="search-bar">
             <img src="../../assets/SearchIcon.svg">
-            <div class="Text-Section-Description">Graduate College</div>
+            <p>Graduate College</p>
         </div>
         <ConstellationSearch></ConstellationSearch>
         <ConstellationSearch :relevant="false"></ConstellationSearch>

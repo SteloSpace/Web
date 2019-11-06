@@ -1,10 +1,10 @@
 <template>
     <BlockComponent class="background">
         <template slot="header">
-            <p style="color:white;">Thank You!</p>
+            <p class="heading-secondary" style="color:white;">Thank You!</p>
         </template>
         <template slot="content">
-            <p class="Text-Style-10">No spam. We promise.</p>
+            <p class="text-light">No spam. We promise.</p>
         </template>
     </BlockComponent>
 </template>

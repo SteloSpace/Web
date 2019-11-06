@@ -18,9 +18,9 @@
                             A simple guide to tackling Nahej in the street.">
             </ConstellationCard>
         </div>
-        <div class="description Text-Section-Description">
+        <p class="description text-tertiary">
             Design / Build a killer online portfolio
-        </div>
+        </p>
     </div>
 </template>
 
@@ -44,7 +44,7 @@ export default {
         overflow: hidden;
     }
 
-    .container { 
+    .container {
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
@@ -55,8 +55,5 @@ export default {
     .description {
         margin-left: 5rem;
         margin-top: 2rem;
-        z-index: -1;
-        color: #A5ABB5;
-
     }
 </style>

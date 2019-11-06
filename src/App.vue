@@ -91,7 +91,7 @@
                     Subscribe to our newsletter
                 </template>
                 <template slot="content">
-                    No spam. We promise.
+                    <p>No spam. We promise.</p>
                 </template>
 
                 <div slot="imageSection" class="animation-section">
