@@ -14,15 +14,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    $width-md: 350px;
+    $width-sm: 250px;
+    $width-xs: 150px;
 
     div {
-        min-width: 350px;
-        height: 185px;
-        border-radius: 30px;
+        min-width: $width-md;
+        height: $width-md/1.9;
+        border-radius: $width-md/11.6;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin: 0 25px;
+        margin: 0 $width-md/14;
+
+        @media only screen and (max-width: 1400px) {
+            min-width: $width-sm;
+            height: $width-sm/1.9;
+            border-radius: $width-sm/11.6;
+            margin: 0 $width-sm/14;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            min-width: $width-xs;
+            height: $width-xs/1.9;
+            border-radius: 2px;
+            border-radius: $width-xs/11.6;
+            margin: 0 $width-xs/14;
+
+            p {
+                font-size: 1rem;
+            }
+        }
     }
 
     p {
@@ -44,4 +70,6 @@ export default {
         background-color: $ice;
         color: $pale-teal;
     }
+
+
 </style>

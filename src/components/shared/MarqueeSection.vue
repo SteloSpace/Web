@@ -63,6 +63,14 @@ export default {
 
     .background > div {
         margin-top: 50px;
+
+        @media only screen and (max-width: 1400px) {
+            margin-top: 30px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            margin-top: 20px;
+        }
     }
 
     .text {
