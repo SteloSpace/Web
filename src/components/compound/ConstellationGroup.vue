@@ -54,5 +54,9 @@ export default {
     .description {
         margin-left: 5rem;
         margin-top: 2rem;
+
+        @media only screen and (max-width: 800px) {
+            margin-left: 2rem;
+        }
     }
 </style>
