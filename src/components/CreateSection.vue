@@ -39,13 +39,31 @@ export default {
 
 <style lang="scss">
     $width-md: 250px;
-    $width-sm: 150px;
-    $width-xs: 100px;
+    $width-sm: 200px;
+    $width-xs: 142px;
+
     $margin-md: 30px;
-    $height-md: 1.4*250;
+    $margin-sm: 20px;
+    $margin-xs: 15px;
+
     $md-offset: $width-md+$margin-md*2;
     $md-offset: $width-md+$margin-md*2;
     $md-offset: $width-md+$margin-md*2;
+
+    $sm-offset: $width-sm+$margin-sm*2;
+    $sm-offset: $width-sm+$margin-sm*2;
+    $sm-offset: $width-sm+$margin-sm*2;
+
+    $xs-offset: $width-xs+$margin-xs*2;
+    $xs-offset: $width-xs+$margin-xs*2;
+    $xs-offset: $width-xs+$margin-xs*2;
+
+    .animation {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 
     #head {
         height: 100px;
@@ -65,6 +83,7 @@ export default {
         animation: move-right-up 7s linear infinite;
     }
 
+    /*Large sized screen*/
     @keyframes head {
         0%, 16%{
             transform: translateY($width-md);
@@ -95,11 +114,75 @@ export default {
         }
     }
 
-    .animation {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+    /*Medium size screen*/
+    @media only screen and (max-width: 1200px) {
+        @keyframes head {
+            0%, 16% {
+                transform: translateY($width-sm);
+            }
+            20%, 95% {
+                transform: unset;
+            }
+        }
+
+        @keyframes move-right {
+            10%, 100% {
+                transform: translateX($sm-offset);
+            }
+        }
+
+        @keyframes move-right-up {
+            10% {
+                transform: translateX($sm-offset);
+                opacity: 0;
+            }
+            11% {
+                transform: translate(-$sm-offset, 1.4*$width-sm);
+                opacity: 0;
+            }
+            20%, 100% {
+                opacity: 1;
+                transform: translate(-$sm-offset, 0);
+            }
+        }
+    }
+
+    /*Medium size screen*/
+    @media only screen and (max-width: 500px) {
+        #head {
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        @keyframes head {
+            0%, 16% {
+                transform: translateY($width-xs);
+            }
+            20%, 100% {
+                transform: unset;
+            }
+        }
+
+        @keyframes move-right {
+            10%, 100% {
+                transform: translateX($xs-offset);
+            }
+        }
+
+        @keyframes move-right-up {
+            10% {
+                transform: translateX($xs-offset);
+                opacity: 0;
+            }
+            11% {
+                transform: translate(-$xs-offset, 1.4*$width-xs);
+                opacity: 0;
+            }
+            20%, 100% {
+                opacity: 1;
+                transform: translate(-$xs-offset, 0);
+            }
+        }
     }
 </style>
 
