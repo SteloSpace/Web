@@ -1,5 +1,5 @@
 <template>
-    <div :class="[colorInverted ? 'black-fill' : 'white-fill', {completed: 'filled'}]" class="progress-circle">
+    <div :class="[colorInverted ? 'black-fill' : 'white-fill', completed? 'filled' : '']" class="progress-circle">
         <div class="blurred"></div>
     </div>
 </template>
