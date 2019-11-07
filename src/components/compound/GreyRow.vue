@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="row" v-for="n in 3" :key="n">
+        <div class="row" v-for="n in 3">
             <MarqueeCard v-for="content in contents"
                          :key="content"
                          :label="content"

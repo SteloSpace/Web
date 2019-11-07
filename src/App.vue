@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <IntroductionSection/>
+        <SearchSection/>
         <CreateSection/>
         <GetHelpSection/>
-        <SearchSection/>
         <ProgressSection/>
         <MarqueeSection/>
         <NewsletterSection

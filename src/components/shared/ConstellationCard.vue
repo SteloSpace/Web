@@ -48,7 +48,7 @@ export default {
         margin: 0 30px;
         position: relative;
 
-        &::after {
+        &::before {
             content: '';
             position: absolute;
             bottom: 0;

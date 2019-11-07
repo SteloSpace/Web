@@ -35,7 +35,6 @@ export default {
 <style scoped lang="scss">
     #root {
         position: relative;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

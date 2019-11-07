@@ -1,8 +1,7 @@
 <template>
     <div class="container">
-        <div class="row" v-for="n in 3" :key="n">
+        <div class="row" v-for="n in 3">
             <MarqueeCard v-for="card in cards"
-                         :key="card"
                          :label="card.label"
                          :color-scheme="card.color"/>
         </div>
