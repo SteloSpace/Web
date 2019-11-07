@@ -68,10 +68,6 @@ export default {
         z-index: 2;
     }
 
-    #input {
-        margin: 2rem;
-    }
-
     .hiddenButton {
         visibility: hidden;
     }
@@ -134,8 +130,11 @@ export default {
     }
 
     input {
-        width: 20rem;
+        max-width: 20rem;
+        width: 100%;
         height: 3rem;
+        margin: 2rem;
+        margin-right: 3rem;
         font-size: 1rem;
         border: none;
         outline: none;

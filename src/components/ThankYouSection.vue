@@ -36,7 +36,7 @@ export default {
     .background {
         animation: showSky 2s ease-in-out .3s forwards;
         clip-path: circle(0 at var(--location));
-        background: $midnight;
+        background: url("../assets/Stars.svg"), $constellation-card-bg;
         position: absolute;
         bottom: 0;
         left: 0;
