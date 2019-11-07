@@ -1,5 +1,5 @@
 <template>
-    <BlockComponent>
+    <BlockComponent class="progress-section">
         <template slot="header">
             Keep track
             <br>
@@ -31,3 +31,25 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss">
+    .progress-section .card-background:first-of-type #progress {
+        animation: fade 7s ease-in-out forwards infinite;
+    }
+    .progress-section .card-background:nth-child(2) #progress {
+        animation: fade2 7s ease-in-out forwards infinite;
+    }
+
+    @keyframes fade {
+        10%, 80%{
+            background-color: white;
+        }
+    }
+    @keyframes fade2 {
+        30%, 90%{
+            background-color: white;
+        }
+    }
+
+</style>
+
