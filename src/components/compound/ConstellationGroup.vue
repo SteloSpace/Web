@@ -2,19 +2,19 @@
     <div id="root">
         <div class="container">
             <ConstellationCard
-                title="Get a Dribbble or (and) Behance account."
-                description="Use dribbble to get people excited about the project.
-                            Include a URL to the project on Behance.">
+                title="Get a Dribbble or (and) Behance account"
+                description="Use dribbble to get people excited about your projects.
+                             Include a URL to the project on Behance.">
             </ConstellationCard>
             <ConstellationCard
-                title="Background about the client"
-                description="Add some information about the client you are working with.
-                            If the project is fictional you can talk about why you created it.">
+                title="Build an awesome portfolio"
+                description="Where to start when creating a personal website? 
+                             Here you'll find usefull tips and tricks for self-advertisement.">
             </ConstellationCard>
             <ConstellationCard
-                title="Tackle Nahej"
-                description="For all of those who have that one friend who everyone 'loves'.
-                            A simple guide to tackling Nahej in the street.">
+                title="My path to getting a Co-op placement"
+                description="In this constellation I will share my path to becoming an engineer intern at Google.
+                             Follow my steps or use this constellation as a structure for your own career path.">
             </ConstellationCard>
         </div>
         <p class="description text-tertiary">

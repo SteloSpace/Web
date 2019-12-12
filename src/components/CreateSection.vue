@@ -1,9 +1,9 @@
 <template>
     <BlockComponent class="create-section">
         <template slot="header">
-            Create & Share
+            Create & share
             <br>
-            Constellations
+            constellations
         </template>
         <template slot="content">
             <p>

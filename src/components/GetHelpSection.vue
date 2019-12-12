@@ -3,13 +3,13 @@
         <template slot="header">
             Get help
             <br>
-            From other users
+            from other people
         </template>
         <template slot="content">
             <p>
-                Add Stars
+                Shape your universe
                 <br>
-                From user's constellations
+                from existing stars
             </p>
         </template>
 

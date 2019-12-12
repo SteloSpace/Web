@@ -7,9 +7,7 @@
         </template>
         <template slot="content">
             <p>
-                Stay on track with
-                <br>
-                your goals
+                Search. Plan. Achieve.
             </p>
         </template>
 

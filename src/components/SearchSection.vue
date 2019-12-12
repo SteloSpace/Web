@@ -1,15 +1,15 @@
 <template>
     <BlockComponent>
         <template slot="header">
-            Find the experience
+            Find the stories
             <br>
-            Relevant to you
+            relevant to you
         </template>
         <template slot="content">
             <p>
-                Get information
+                Get personalized suggestions
                 <br>
-                Tailored to your past experiences
+                in stead of endless scrolling
             </p>
         </template>
 
