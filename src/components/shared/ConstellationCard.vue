@@ -48,16 +48,17 @@ export default {
         margin: 0 30px;
         position: relative;
 
-        &::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 10%;
-            width: 80%;
-            height: 50%;
-            box-shadow: 0 0 40px;
-            z-index: -1;
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 10%;
+        //     width: 80%;
+        //     background-color: linear-gradient(180deg, $navy 0%, $midnight 100%);
+        //     height: 50%;
+        //     box-shadow: 0 0 40px;
+        //     z-index: -1;
+        // }
     }
 
     .card-header {

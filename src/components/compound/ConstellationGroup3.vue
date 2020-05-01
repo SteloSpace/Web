@@ -2,20 +2,20 @@
     <div id="root">
         <div class="container">
             <ConstellationCard
-               title="Separate And Isolate"
+                title="Separate And Isolate"
                 description="I started by moving my workspace to the 
-                             basement secluding myself from distractions and separating it as a work environment not a 
+                             basement secluding myself from distractions and seperating it as a work enviroment not a 
                              relaxation area.">
             </ConstellationCard>
             <ConstellationCard
                       title="Time Blocking"
-               description="I was getting distracted easily, I have a family that's also staying at home.
+                description="I was getting distracted easily at home, having a family thats also staying at home.
                     I would want to spend time with them instead I set up time blocking 30min pure work 5 min break.">
             </ConstellationCard>
-            <ConstellationCard
-                title="Natural Light"
-                description="Natural Light can have a huge impact on work productivity. It's also been a lot better then 
-                        sitting in my basement with no windows.">
+                        <ConstellationCard
+                      title="Get up and take breaks"
+                description="It's easy to get lost in my own productivity sometimes
+                            especially in the comfort of my own home. I take breaks every hour to stretch.">
             </ConstellationCard>
 
         </div>

@@ -3,7 +3,10 @@
         <div class="context-section">
             <h1 class="heading-primary">Stelo</h1>
             <p class="heading-tertiary">
-                Your universe of experiences
+                Share your experiences
+            </p>
+              <p class="heading-tertiary">
+                Learn from others
             </p>
             <p class="text-secondary">
                 Coming Soon
