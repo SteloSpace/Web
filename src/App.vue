@@ -53,17 +53,16 @@ export default {
         scroll-behavior: smooth;
     }
 
-#app {
-      box-sizing: border-box;
-    overflow-x: hidden;
-    
-         max-height: 100vh;
+    #app {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        max-height: 100vh;
         width: 100%;
-    //     scroll-snap-type: y mandatory;
-    //     scroll-snap-type: mandatory;
-    //     scroll-snap-points-y: repeat(100vh);
-    // }
-}
+        scroll-snap-type: y mandatory;
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100vh);
+    }
 
     #app > div {
         margin-bottom: 100px;

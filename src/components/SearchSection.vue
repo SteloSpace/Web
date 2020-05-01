@@ -1,15 +1,15 @@
 <template>
     <BlockComponent>
         <template slot="header">
-            Find a personalized path
+            Find the stories
             <br>
-            to success
+            relevant to you
         </template>
         <template slot="content">
             <p>
-                We base our search on you, so you can
+                Get personalized suggestions
                 <br>
-                 get the most accurate roadmap
+                in stead of endless scrolling
             </p>
         </template>
 

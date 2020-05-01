@@ -2,25 +2,23 @@
     <div id="root">
         <div class="container">
             <ConstellationCard
-               title="Separate And Isolate"
-                description="I started by moving my workspace to the 
-                             basement secluding myself from distractions and separating it as a work environment not a 
-                             relaxation area.">
+                title="Get a Dribbble or (and) Behance account"
+                description="Use dribbble to get people excited about your projects.
+                             Include a URL to the project on Behance.">
             </ConstellationCard>
             <ConstellationCard
-                      title="Time Blocking"
-               description="I was getting distracted easily, I have a family that's also staying at home.
-                    I would want to spend time with them instead I set up time blocking 30min pure work 5 min break.">
+                title="Build an awesome portfolio"
+                description="Where to start when creating a personal website? 
+                             Here you'll find usefull tips and tricks for self-advertisement.">
             </ConstellationCard>
             <ConstellationCard
-                title="Natural Light"
-                description="Natural Light can have a huge impact on work productivity. It's also been a lot better then 
-                        sitting in my basement with no windows.">
+                title="My path to getting a Co-op placement"
+                description="In this constellation I will share my path to becoming an engineer intern at Google.
+                             Follow my steps or use this constellation as a structure for your own career path.">
             </ConstellationCard>
-
         </div>
         <p class="description text-tertiary">
-            Working from Home
+            Design / Build a killer online portfolio
         </p>
     </div>
 </template>

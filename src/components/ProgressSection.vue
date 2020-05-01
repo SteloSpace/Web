@@ -12,20 +12,20 @@
         </template>
 
         <div slot="imageSection">
-            <ConstellationGroup2/>
+            <ConstellationGroup/>
         </div>
     </BlockComponent>
 </template>
 <script>
 
 import BlockComponent from './shared/BlockComponent'
-import ConstellationGroup2 from './compound/ConstellationGroup2'
+import ConstellationGroup from './compound/ConstellationGroup'
 
 export default {
 	name: 'ProgressSection',
 	components: {
 		BlockComponent,
-		ConstellationGroup2
+		ConstellationGroup
 	}
 }
 </script>

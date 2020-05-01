@@ -2,16 +2,15 @@
     <div class="search-results">
         <div class="search-bar">
             <img src="../../assets/SearchIcon.svg">
-            <p>Working From Home</p>
+            <p>Graduate College</p>
         </div>
         <ConstellationSearch></ConstellationSearch>
-        <ConstellationSearch></ConstellationSearch>
         <ConstellationSearch :relevant="false"></ConstellationSearch>
+        <ConstellationSearch></ConstellationSearch>
         <ConstellationSearch :relevant="false"></ConstellationSearch>
         <ConstellationSearch :relevant="false"></ConstellationSearch>
         <div class="curtain"/>
     </div>
-    
 </template>
 
 <script>
